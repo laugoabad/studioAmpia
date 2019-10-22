@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand h2" href="#"><img src="imgs/5.png" width="20" height="20"
-                    class="d-inline-block align-top" alt="">&nbsp;&nbsp;  Studio Ampia</a>
+                    class="d-inline-block align-top" alt="">&nbsp;&nbsp; Studio Ampia</a>
             <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,25 +40,18 @@
         </div>
 
         <div class="d-flex justify-content-center titulo-principal"> AMPIA</div>
-        <h5 class="d-flex justify-content-center mt-2 mb-4">Medici, psicologi e psicoterapeuti specializzati in infanzia ed
-            adolescienza</h5>
-    </div>
-    <section>
-        <ul class="row d-flex justify-content-center mt-4">
-            <li v-for="nota of notas" class="card col-11 col-md-6 col-lg-4 col-xl-3">
-                <article>
-                    <div class="row autor">
-                        <img src="./imgs/images.jpg" alt="foto" class="foto col-1 img-responsive">
-                        <h6 class="nombre-small col-8"></h6>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <p class="card-text collapse"></p>
-                        <a v-bind:href="nota.hrefer" class="collapsed"></a>
-                    </div>
-                </article>
-            </li>
-        </ul>
+        <h5 class="d-flex justify-content-center mt-2 mb-4">Medici, psicologi e psicoterapeuti specializzati in infanzia ed adolescienza</h5>
+    
+    <section class="row d-flex justify-content-center mt-4">
+        <div class="card col-11 col-md-6 col-lg-4 col-xl-3">
+
+            <h6 class="nombre-small col-8"></h6>
+
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text collapse"></p>
+                <a href="nota.hrefer" class="collapsed"></a>
+            </div>
     </section>
     </div>
 
