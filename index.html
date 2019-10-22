@@ -35,30 +35,31 @@
                 </div>
             </div>
         </nav>
-        <div class="my-5 d-flex justify-content-center">
-            <img src="imgs/logo.png" class="" alt="logo" width="120" height="120">
-            </div>
-            
-            <div class="d-flex justify-content-center mt-5 titulo-principal"> Ampia</div>
-            <h5 class="d-flex justify-content-center mt-1">Medici, psicologi e psicoterapeuti specializzati in infanzia ed adolescienza</h5>
+        <div class="my-4 d-flex justify-content-center">
+            <img src="imgs/logo.png" class="" alt="logo" width="100" height="100">
         </div>
-        <section>
-            <ul class="row d-flex justify-content-center">
-                <li v-for="nota of notas" class="card col-11 col-md-6 col-lg-4 col-xl-3">
-                    <article>
-                        <div class="row autor">
-                            <img src="./imgs/images.jpg" alt="foto" class="foto col-1 img-responsive">
-                            <h6 class="nombre-small col-8"></h6>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <p class="card-text collapse"></p>
-                            <a v-bind:href="nota.hrefer" class="collapsed"></a>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </section>
+
+        <div class="d-flex justify-content-center titulo-principal"> Ampia</div>
+        <h5 class="d-flex justify-content-center mt-2">Medici, psicologi e psicoterapeuti specializzati in infanzia ed
+            adolescienza</h5>
+    </div>
+    <section>
+        <ul class="row d-flex justify-content-cente mt-4">
+            <li v-for="nota of notas" class="card col-11 col-md-6 col-lg-4 col-xl-3">
+                <article>
+                    <div class="row autor">
+                        <img src="./imgs/images.jpg" alt="foto" class="foto col-1 img-responsive">
+                        <h6 class="nombre-small col-8"></h6>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text collapse"></p>
+                        <a v-bind:href="nota.hrefer" class="collapsed"></a>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,7 +71,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    
+
 </body>
 
 </html>
