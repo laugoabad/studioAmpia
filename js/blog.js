@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-        tituloBlog: "Blog",
+        titulo: "AMPIA",
         notas: [
             {
                 autor: "Laura González",
