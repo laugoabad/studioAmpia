@@ -24,16 +24,16 @@
                 <article class="card col-11 ">
                     <div class="row autor">
                         <img src="../imgs/images.jpg" alt="foto" class="foto col-1 img-responsive">
-                        <h6 class="nombre-big col-8">{{notas[3].autor}}</h6>
+                        <h6 class="nombre-big col-8">{{notas[0].autor}}</h6>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">{{notas[3].titulo}}</h5>
-                        <p class="card-text"> {{notas[3].texto}}</p>
+                        <h5 class="card-title">{{notas[0].titulo}}</h5>
+                        <p class="card-text"> {{notas[0].texto}}</p>
                     </div>
                     <div class="card-footer">
                         <h6 class="text-mute">Comentarios</h6>
                         <ul>
-                            <li v-for="comentario of notas[3].comentarios">
+                            <li v-for="comentario of notas[0].comentarios">
                                 <div class="card">
                                     <div class="card-body">
                                         <p class="card-text">{{comentario.textoComentario}}</p>

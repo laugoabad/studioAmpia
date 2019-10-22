@@ -19,11 +19,11 @@ body {
 li {
     list-style-type: none;
 }
-
+/* 
 .header {
     margin: 2rem;
-    font-size: 4rem;
-}
+    font-size: 3rem;
+} */
 
 .foto {
     min-width: 80px;
@@ -83,10 +83,10 @@ p.collapsing, #collapseComentarios.collapsing {
     min-height: 150px !important;
 }
 
-/* a.collapsed:after, #collapseComentarios.collapsed:after {
+a.collapsed:after, #collapseComentarios.collapsed:after {
     content: '+ Leer Más';
 }
 
 #collapseComentarios:not(.collapsed):after {
     content: '- Leer Menos';
-} */
+}
