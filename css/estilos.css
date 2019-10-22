@@ -87,6 +87,6 @@ a.collapsed:after, #collapseComentarios.collapsed:after {
     content: '+ Leer Más';
 }
 
-a:not(.collapsed):after, #collapseComentarios:not(.collapsed):after {
+#collapseComentarios:not(.collapsed):after {
     content: '- Leer Menos';
 }
