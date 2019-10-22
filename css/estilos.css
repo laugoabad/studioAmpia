@@ -17,8 +17,8 @@ body {
     background-color: lightgray;
 }
 .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .titulo-principal {
