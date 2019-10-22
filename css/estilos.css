@@ -21,6 +21,12 @@ body {
     padding-right: 0px;
 }
 
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .titulo-principal {
     font-size: 4rem;
 }
