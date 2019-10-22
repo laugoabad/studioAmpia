@@ -16,6 +16,10 @@ body {
     background-color: lightgray;
 }
 
+titulo-principal {
+    font-size: 3rem;
+}
+
 li {
     list-style-type: none;
 }
