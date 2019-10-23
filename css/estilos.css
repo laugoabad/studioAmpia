@@ -11,11 +11,11 @@ html {
 body {
     width: 100%;
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    /* background-color:whitesmoke; */
-    background-image: url("../imgs/16365.jpg");
+    background-color:whitesmoke;
+    /* rgba(137, 196, 242, 0); */
 }
 .container-fluid {
     padding-left: 0px;
