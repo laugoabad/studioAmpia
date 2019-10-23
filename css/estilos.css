@@ -15,7 +15,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /* background-color:whitesmoke; */
-    background-image: url("imgs/16365.jpg");
+    background-image: url("../imgs/16365.jpg");
 }
 .container-fluid {
     padding-left: 0px;
