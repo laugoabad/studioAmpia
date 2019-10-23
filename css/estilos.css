@@ -30,6 +30,10 @@ body {
 .caja-derecha {
     background-color: rgba(137, 196, 242, 0); 
 }
+
+.caja-izquierda {
+    background-color: white;;
+}
  
 .titulo-principal {
     font-size: 3.5rem;
@@ -85,7 +89,7 @@ li {
 .comentarios {
     font-size: 0.8rem;
 }
-
+/* 
 p.collapse:not(.show), #collapseComentarios:not(.show) {
     height: 150px !important;
     overflow: hidden;
@@ -104,4 +108,4 @@ a.collapsed:after, #collapseComentarios.collapsed:after {
 
 #collapseComentarios:not(.collapsed):after {
     content: '- Leer Menos';
-}
+} */
