@@ -60,7 +60,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
 }
 
 li {
@@ -116,6 +116,7 @@ li {
 }
 .titulo-secundario {
    font-size: 1.3rem;
+   letter-spacing: 0.3rem;
 }
 .caja-derecha p{
     font-size: 1.4rem;
