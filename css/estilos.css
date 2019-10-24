@@ -39,10 +39,11 @@ body {
 }
 
 .caja-derecha p{
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;  
     margin-top: 10%; 
     color: black;
+    padding: 0.5rem;
 }
 
 .caja-izquierda {
@@ -51,13 +52,13 @@ body {
 }
  
 .titulo-principal {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: 'Play fair',serif;
 }
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.3rem;
 }
@@ -108,26 +109,17 @@ li {
     padding: 1rem;
 }
 
-.comentarios {
-    font-size: 0.8rem;
-}
-/* 
-p.collapse:not(.show), #collapseComentarios:not(.show) {
-    height: 150px !important;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-}
 
-p.collapsing, #collapseComentarios.collapsing {
-    min-height: 150px !important;
+@media (min-width:768px) {
+.titulo-principal{
+    font-size: 4.5rem;
 }
-
-a.collapsed:after, #collapseComentarios.collapsed:after {
-    content: '+ Leer Más';
+.titulo-secundario {
+   font-size: 1.2rem;
 }
-
-#collapseComentarios:not(.collapsed):after {
-    content: '- Leer Menos';
-} */
+.caja-derecha p{
+    font-size: 1.4rem;
+    padding: 2rem;
+    margin-top: 20%;
+}
+}
