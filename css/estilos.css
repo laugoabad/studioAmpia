@@ -28,7 +28,7 @@ body {
 }
 
 .caja-derecha{
-    background-image: url("../imgs/16365-crop.png");
+    background-image: url("../imgs/16365-crop-2.png");
     background-color: rgba(0, 0, 0, 0.2);
     -ms-background-size: cover;
     -o-background-size: cover;
@@ -48,7 +48,7 @@ body {
 
 .caja-izquierda {
     /* background-color:#f5f589; */
-    background-color: cornflowerblue;;
+    background-color: white;
 }
  
 .titulo-principal {
