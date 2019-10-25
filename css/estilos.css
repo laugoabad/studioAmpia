@@ -48,7 +48,8 @@ body {
 
 .caja-izquierda {
     /* background-color:#f5f589; */
-    background-color:#a4c0f4;
+    /* background-color:#a4c0f4; */
+    background-color: #bbd0f7;
 }
  
 .titulo-principal {
@@ -120,7 +121,6 @@ li {
 
 
 @media (min-width:768px) {
-
 .navbar-brand {
     font-size: 1.4rem;
 }
