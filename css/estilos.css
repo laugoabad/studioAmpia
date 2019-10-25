@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-brand{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     font-family:  'Play fair',serif;
 }
@@ -58,7 +58,7 @@ body {
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.2rem;
 }
@@ -120,6 +120,10 @@ li {
 
 
 @media (min-width:768px) {
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
 .titulo-principal{
     font-size: 4.5rem;
 }
