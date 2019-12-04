@@ -12,139 +12,41 @@
     <!-- Load polyfills to support older browsers -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2CIntersectionObserver"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/components/navegacion.js"></script>
+    <script src="js/components/chisiamo.js"></script>
+    <script src="js/components/intro.js"></script>
+    <script src="js/components/servizi.js"></script>
+
     <!-- Required scripts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 
 <body>
-    <div id="app">
-        <div class="container-fluid p-3">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="#"><img src="imgs/5.png" width="30" height="30" alt="favicon">&nbsp;&nbsp;
-                    Studio Ampia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto text-center">
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#chi-siamo">Chi Siamo</a>
-                        <a class="nav-item nav-link" href="#servizi">Servizi</a>
-                        <a class="nav-item nav-link" href="#eventi">Eventi</a>
-                        <a class="nav-item nav-link" href="#aree">Aree di Interesse</a>
-                    </div>
-                </div>
-            </nav>
+    <div id="app" class="container-fluid p-3">
+        <header>
+            <navegacion></navegacion>
+        </header>
+        <section id="intro">
+            <intro></intro>
+        </section>
 
-            <header class="mb-5 mt-5">
-                <div class="row justify-content-center mt-4">
-                    <div class="col-12 col-lg-5 caja-izquierda py-5">
-                        <div class="d-flex justify-content-center pt-5">
-                            <img src="imgs/logo.png" class="logo m-1" alt="logo" width="70" height="70">
-                        </div>
+        <section id="chi-siamo" class="row d-flex justify-content-center">
+            <chisiamo></chisiamo>
+        </section>
 
-                        <div class="d-flex justify-content-center titulo-principal p-3"> AMPIA</div>
-                        <h5 class="d-flex justify-content-center titulo-secundario mt-2 mb-5 px-4 pb-5">Medici <br>
-                            Psicologi
-                            <br> Psicoterapeuti <br>Specializzati <br>in Infanzia <br>
-                            ed Adolescienza</h5>
-                    </div>
-                    <div class="col-12 col-lg-5 caja-derecha">
-                        <p>
-                            {{intro1}} <br><br>
-                            {{intro2}} <br><br>
-                    </div>
-                </div>
-            </header>
-
-            <section id="chi-siamo" class="row justify-content-center mt-5 mb-5">
-                <div class="col-12 col-lg-8 ">
-                    <h2 class="text-center p-3">Chi Siamo</h2>
-                    <p class="parrafo">
-                        {{chiSiamo1}}<br><br> 
-                        {{chiSiamo2}}<br><br>
-                        {{chiSiamo3}}<br><br>
-                        {{chiSiamo4}}<br><br>
-                    </p>
-                </div>
-            </section>
-
-            <section id="servizi" class="row d-flex justify-content-center pt-5 mt-4">
-                <h2 class="col-12 text-center mb-3">Servizi</h2>
-
-
-                
-
-
-
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <a href="html/servizi/sostegno.html" class="card-title">Sostegno e Trattamento Individuale -
-                            bambini, giovani e adulti</a>
-                        <p></p>
-                </article>
-
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Psicodiagnosi, Valutazioni Cognitive, Testistica</h5>
-                        <p></p>
-                    </div>
-                </article>
-
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Percorsi di Sostegno alla Genitorialità<h5>
-                                <p></p>
-                    </div>
-                </article>
-
-
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Osservazione Perinatale e Neonatale, Sostegno all’Allattamento e al Puerperio</h5>
-                        <p></p>
-                    </div>
-                </article>
-
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Incontri di Formazione, Approfondimento e Discussione</h5>
-                        <p></p>
-                    </div>
-                </article>
-                <article class="card col-11 col-xl-6">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Laboratori e Progetti Psicoeducativi</h5>
-                        <p></p>
-                    </div>
-                </article>
-            </section>
-
-            <section id="eventi" class="row justify-content-center mt-5 mb-5">
-                    <div class="col-12 col-lg-8 ">
-                        <h2 class="text-center p-3">Eventi</h2>
-                        <article class="card col-11 col-xl-6">
-                                <div class="card-body">
-                                    <a href="html/servizi/sostegno.html" class="card-title">Sostegno e Trattamento Individuale -
-                                        bambini, giovani e adulti</a>
-                                    <p></p>
-                            </article>
-            
-                            <article class="card col-11 col-xl-6">
-                                <div class="card-body">
-                                    <h5 class="card-title">Psicodiagnosi, Valutazioni Cognitive, Testistica</h5>
-                                    <p></p>
-                                </div>
-                            </article>
-                    </div>
-                </section>
-    
-        </div>
+        <section id="servizi" class="row d-flex justify-content-center pt-5 mt-1">
+            <servizi></servizi>
+        </section>
     </div>
+
+    <script>
+        new Vue({
+            el: "#app"
+        })
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -155,10 +57,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/app.js"></script>
-    
-
 </body>
 
 </html>

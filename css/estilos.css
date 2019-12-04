@@ -5,7 +5,8 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,63 +15,73 @@ body {
     font-family: 'Raleway', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
 }
+
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.navbar-brand{
-    font-size: 1rem;
-    font-weight: 600;
-    font-family:  'Play fair',serif;
+header {
+    margin-top: 10rem
 }
 
-.caja-derecha{
-    background-image: url("../imgs/16365-crop-2.png");
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+    margin-right: 3rem;
+}
+
+.caja-derecha ul {
+    margin-bottom: 0;
+    padding: 6rem;
+    background-color: rgba(256, 256, 256, 0.7);
+}
+
+.caja-derecha p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: black;
+    padding: 0.5rem;
+}
+
+.caja-izquierda {
+    background-image: url("../imgs/16365-r.png");
     background-color: rgba(0, 0, 0, 0.2);
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-
 }
 
-.caja-derecha p{
-    font-size: 1rem;
-    font-weight: 600;  
-    margin-top: 10%; 
-    color: black;
-    padding: 0.5rem;
-}
-
-.caja-izquierda {
-    /* background-color:#f5f589; */
-    /* background-color:#a4c0f4; */
-    background-color: #bbd0f7;
-}
- 
 .titulo-principal {
-    font-size: 3rem;
-    font-family: 'Play fair',serif;
+    font-size: 5rem;
+    font-family: 'Cinzel', serif;
+    margin: 3rem 0rem 0rem 0;
 }
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+    font-size: 1.6em;
     font-weight: 600;
     letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .titulo-seccion {
-    font-weight: 600;
-    margin-top: 4rem;
+    font-size: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 .parrafo {
-    font-size: 0.8rem;
+    font-size: 1.6rem;
 }
 
 li {
@@ -85,9 +96,11 @@ li {
 }
 
 .card {
+    font-size: 2rem;
     margin: 0.6rem;
-    padding: 0.5rem;
+    padding: 2rem;
     border-radius: 1rem;
+    background-color: cornflowerblue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1);
     -moz-transform: scale(1);
@@ -107,37 +120,35 @@ li {
     padding-bottom: 0.5rem;
     margin: 0.5em;
     border-bottom: 1px solid lightgray;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .nombre-small {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .nombre-big {
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 1rem;
 }
 
-
 @media (min-width:768px) {
-.navbar-brand {
-    font-size: 1.4rem;
-}
-.titulo-principal{
-    font-size: 4.5rem;
-}
-.titulo-secundario {
-   font-size: 1.3rem;
-   letter-spacing: 0.3rem;
-}
-
-.parrafo {
-    font-size: 1rem;
-}
-.caja-derecha p{
-    font-size: 1.4rem;
-    padding: 2rem;
-    margin-top: 20%;
-}
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .titulo-principal {
+        font-size: 7rem;
+        letter-spacing: 0.7rem;
+    }
+    .titulo-secundario {
+        font-size: 1.8rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 8rem;
+    }
+    .parrafo {
+        font-size: 2rem;
+    }
+    .caja-derecha p {
+        font-size: 2.2rem;
+    }
 }
