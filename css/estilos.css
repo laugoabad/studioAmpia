@@ -29,7 +29,7 @@ header {
 
 .navbar-brand {
     font-family: 'Cinzel', serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -37,6 +37,7 @@ header {
     font-size: 1.5rem;
     margin-right: 3rem;
 }
+
 
 .caja-derecha ul {
     margin-bottom: 0;
@@ -61,14 +62,14 @@ header {
 }
 
 .titulo-principal {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Cinzel', serif;
     margin: 3rem 0rem 0rem 0;
 }
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.6em;
+    font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.2rem;
     margin-bottom: 1rem;
@@ -117,7 +118,7 @@ li {
 }
 
 .servizi-esteso {
-    padding: 7rem;
+    padding: 6rem;
 }
 
 .servizi-esteso .card-title{
