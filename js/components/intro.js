@@ -2,7 +2,7 @@ Vue.component('intro', {
     template: //html
         `<div>
             <div class="d-flex justify-content-center">
-                <img src="imgs/logo.png" class="logo m-1" alt="logo" width="80" height="80">
+                <img src="imgs/logo.png" class="logo m-1" alt="logo" width="70" height="70">
             </div>
              <div class="titulo-principal d-flex justify-content-center"> 
                     STUDIO AMPIA
@@ -13,10 +13,10 @@ Vue.component('intro', {
             </h5>
             
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-5 caja-izquierda">
+                <div class="col-12 col-lg-5 col-xl-4 caja-izquierda">
                     
                 </div>
-                <div class="col-12 col-lg-5 caja-derecha">
+                <div class="col-12 col-lg-5 col-xl-4 caja-derecha">
                     <ul class="row">
                         <li v-for= "intr of intro" class="col-12 text-center">
                             <p>

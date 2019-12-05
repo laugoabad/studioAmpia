@@ -4,8 +4,8 @@ Vue.component('chisiamo', {
                 <h2 class="text-center p-3 titulo-seccion">Chi Siamo
                 </h2>
                 <p>
-                    <ul class="row d-flex parrafo">
-                        <li v-for= "chi of chiSiamo" class=" col-11">
+                    <ul class="parrafo">
+                        <li v-for= "chi of chiSiamo" >
                             <p>
                                  {{chi.texto}} 
                             </p> 

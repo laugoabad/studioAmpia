@@ -3,30 +3,34 @@ Vue.component('servizi', {
         `
     <div class="container">
        <h2 class="col-12 text-center titulo-seccion">Servizi</h2>
-         <div v-if="!leerMas">
-            <ul class="row d-flex justify-content-center">
-              <li v-for="(item, index) of items" class="card col-11 col-md-8 col-lg-4" @click="checkLeerMas(index)" >
-                 <article >
+        <div v-if="!leerMas">
+            <div class="row d-flex justify-content-center">
+              <article v-for="(item, index) of items" class="card col-11 col-md-8 col-lg-5" @click="checkLeerMas(index)" >
+                 <img v-bind:src="item.imagen"  class="card-img-top" alt="">
+                 <div class="card-body">
+                    <p class="card-text">
                      {{item.titulo}}
-                 </article>
-              </li>
-            </ul> 
-          </div>
+                    </p> 
+                 </div>    
+                 
+              </article>
+            </div> 
+        </div>
       
         <template v-else>
-            <section class="row d-flex justify-content-center mt-5">
-                <article class="card col-11 ">
+            <article class="row d-flex justify-content-center mt-5">
+                <div class="card servizi-esteso col-12">
                     <div class="card-body">
-                         <h5 class="card-title">{{items[i].titulo}}</h5>
-                          <ul>
-                               <li v-for="subitem of items[i].contenido" class="col-11">
-                                   <p >{{subitem.texto}}</p>
-                                </li>
-                            </ul>
+                        <h5 class="card-title text-center">{{items[i].titulo}}</h5>
+                        <ul>
+                            <li v-for="subitem of items[i].contenido">
+                                <p >{{subitem.texto}}</p>
+                            </li>
+                        </ul>
                     </div>
-                </article>
-                <button class="btn btn-primary ml-4" @click="leerMas = !leerMas">Volver</button>
-            </section>
+                </div>
+                <button class="btn btn-lg" @click="leerMas = !leerMas">Volver</button>
+            </article>
         </template>
     </div>
     `,
@@ -37,6 +41,7 @@ Vue.component('servizi', {
             items: [
                 { 
                     titulo: 'Sostegno e Trattamento Individuale per bambini, giovani e adulti',
+                    imagen: 'imgs/0.png',
                     contenido: [
                         {
                             texto: 'Il Sostegno Psicologico Individuale ha come obiettivo il miglioramento della qualità della vita ed è indirizzato a coloro che attraversano un periodo di disagio o sofferenza psichica; si tratta di un intervento volto ad accogliere le difficoltà, nel quale il paziente ha occasione di sperimentare insieme al terapeuta una modalità di adattamento più efficace. Il sostegno è declinato differentemente in base alle caratteristiche individuali di ciascuno e lo strumento principe è il colloquio clinico. In caso di lavoro con minori, dal momento che gioco e disegno rappresentano un canale espressivo ricchissimo, vengono comunemente utilizzati colori, materiali di gioco e di manipolazione libera.'
@@ -55,6 +60,7 @@ Vue.component('servizi', {
 
                 {
                     titulo: 'Psicodiagnosi, Valutazioni Cognitive, Testistica',
+                    imagen: 'imgs/1.png',
                     contenido: [
                         {
                             texto: 'La Psicodiagnosi si organizza in un ciclo di incontri finalizzato ad una descrizione dinamica delle specifiche modalità di funzionamento individuale, con particolare attenzione a risorse e capacità, ma anche agli elementi di conflitto, siano essi all’origine del disagio che porta il paziente all’attenzione del terapeuta o meno percettibili.'
@@ -73,6 +79,7 @@ Vue.component('servizi', {
 
                 {
                     titulo: 'Percorsi di Sostegno alla Genitorialità',
+                    imagen: 'imgs/2.png',
                     contenido: [
                         {
                             texto: 'Il Sostegno alla Genitorialità è destinato a genitori in difficoltà per ragioni che hanno a che fare con la complessità del ruolo e dei continui adattamenti che esso richiede, a fronte dei cambiamenti fisiologici, emotivi e relazionali che la nascita e la crescita di un figlio implicano. La complessità della funzione genitariale si struttura intorno ad aspetti individuali, alle dinamiche di coppia e alle competenze relazionali di ciascuno. Comporta la capacità di adattare in modo dinamico il proprio stile educativo ai bisogni evolutivi del figlio, pur quando si modificano velocemente.'
@@ -86,6 +93,7 @@ Vue.component('servizi', {
 
                 {
                     titulo: 'Osservazione Perinatale e Neonatale, Sostegno all’Allattamento e al Puerperio',
+                    imagen: 'imgs/3.png',
                     contenido: [
                         {
                             texto: 'Le sedute di Osservazione Mamma-Bambino, rappresentano uno strumento prezioso di consultazione, attraverso cui rivolgere uno sguardo attento ed empatico alla relazione tra una madre e il suo bambino, in età anche precocissima. Si tratta di un percorso utile a favorire la comprensione, da parte dei genitori, dei significati profondi dei segnali che il bambino invia, talvolta difficilmente decifrabili, specie quando si è direttamente coinvolti.'
@@ -104,6 +112,7 @@ Vue.component('servizi', {
 
                 {
                     titulo: 'Incontri di Formazione, Approfondimento e Discussione',
+                    imagen: 'imgs/4.png',
                     contenido: [
                         {
                             texto: 'Gli incontri di Formazione, che lo studio AMPIA propone, siano essi seminari, conferenze o eventi occasionali di approfondimento, vengono organizzati in collaborazione con enti, istituti scolastici, associazioni pubbliche e private del territorio piemontese, per fornire servizi di informazione e discussione su tematiche riguardanti la funzione genitoriale, la neonatalità, l’infanzia e l’adolescenza, negli aspetti più complessi delle tappe evolutive. Vengono altresì trattate le dinamiche relazionali e di gruppo, in contesto familiare ed extrafamiliare, l’orientamento scolastico e molto altro.'
@@ -116,6 +125,7 @@ Vue.component('servizi', {
 
                 {
                     titulo: 'Laboratori e Progetti Psicoeducativi',
+                    imagen: 'imgs/5.png',
                     contenido: [
                         {
                             texto: 'I Laboratori Scolastici ed Extrascolastici, si organizzano in attività di gruppo, mediate da un esperto, e si rivelano spesso occasione di confronto e crescita per i bambini e i ragazzi cui sono rivolti. Il clima degli incontri è di ascolto empatico e attento, ciascuno è incoraggiato ad offrire il proprio contributo e vengono scelti argomenti che possano stimolare le curiosità giovanili che non di rado restano inespresse per paura, pudore, vergogna.'
