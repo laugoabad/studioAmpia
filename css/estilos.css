@@ -18,11 +18,6 @@ body {
     background-color: white;
 }
 
-.container-fluid {
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 header {
     margin-top: 10rem
 }
@@ -38,10 +33,9 @@ header {
     margin-right: 3rem;
 }
 
-
 .caja-derecha ul {
     margin-bottom: 0;
-    padding: 5rem;
+    padding: 15%;
     background-color: whitesmoke;
 }
 
@@ -59,6 +53,12 @@ header {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
+    padding: 40%;
+}
+
+#chi-siamo, #intro {
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .titulo-principal {
@@ -72,7 +72,7 @@ header {
     font-size: 1em;
     font-weight: 600;
     letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5%;
 }
 
 .titulo-seccion {
@@ -121,7 +121,7 @@ li {
     padding: 6rem;
 }
 
-.servizi-esteso .card-title{
+.servizi-esteso .card-title {
     font-size: 3rem;
     font-weight: bold;
     color: cornflowerblue;
@@ -129,7 +129,7 @@ li {
 }
 
 .servizi-esteso ul {
-    padding-left: 8rem ;
+    padding-left: 8rem;
     padding-right: 8rem;
 }
 
@@ -154,10 +154,9 @@ li {
     background-color: cornflowerblue;
 }
 
-
 @media (min-width:768px) {
     .navbar-brand {
-        font-size: 2rem;
+        font-size: 1.5em;
     }
     .titulo-principal {
         font-size: 5.5rem;
@@ -172,6 +171,25 @@ li {
         font-size: 2rem;
     }
     .caja-derecha p {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .caja-derecha p {
+        font-size: 1.6rem;
+    }
+    .caja-izquierda {
+        padding: 0rem
+    }
+}
+
+@media (min-width:1440px) {
+    .caja-derecha p {
         font-size: 2rem;
+    }
+    #chi-siamo, #intro {
+        padding-right: 15%;
+        padding-left: 15%;
     }
 }

@@ -1,10 +1,10 @@
 Vue.component('chisiamo', {
     template: //html
-      `<div class="col-12 col-lg-8 mt-5 mb-4">
-                <h2 class="text-center p-3 titulo-seccion">Chi Siamo
+      `<div class="row d-flex justify-content-center">
+                <h2 class="text-center titulo-seccion col-12">Chi Siamo
                 </h2>
                 <p>
-                    <ul class="parrafo">
+                    <ul class="parrafo col-12">
                         <li v-for= "chi of chiSiamo" >
                             <p>
                                  {{chi.texto}} 

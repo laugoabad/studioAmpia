@@ -13,10 +13,10 @@ Vue.component('intro', {
             </h5>
             
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-5 col-xl-4 caja-izquierda">
+                <div class="col-12 col-lg-6 caja-izquierda">
                     
                 </div>
-                <div class="col-12 col-lg-5 col-xl-4 caja-derecha">
+                <div class="col-12 col-lg-6 caja-derecha">
                     <ul class="row">
                         <li v-for= "intr of intro" class="col-12 text-center">
                             <p>
