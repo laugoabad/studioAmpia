@@ -5,11 +5,11 @@ Vue.component('navegacion', {
          <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <a class="navbar-brand" href="#"><img src="imgs/5.png" width="30" height="30" alt="favicon">&nbsp;&nbsp;
                     Studio Ampia</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" 
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse">
                     <div class="navbar-nav ml-auto text-center">
                         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="#chi-siamo">Chi Siamo</a>
