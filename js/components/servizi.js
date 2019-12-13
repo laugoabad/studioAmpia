@@ -5,14 +5,16 @@ Vue.component('servizi', {
        <hr class="mb-5">
        <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
         <div v-if="!leerMas">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
               <article v-for="(item, index) of items" class="card col-10 col-md-6 col-lg-4" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
-                 <div class="card-body">
-                    <h5 class="card-title text-center mt-3">
+                 <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center mb-5">
                      {{item.titulo}}
                     </h5>
-                    <button class="btn btn-info d-flex justify-content-right"> +info</button>
+                    
+                       <button class="btn mt-auto"> +info</button>
+                
                  </div>    
                  
               </article>

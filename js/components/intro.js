@@ -1,9 +1,7 @@
 Vue.component('intro', {
     template: //html
         `<div>
-            <div class="d-flex justify-content-center">
-                <img src="imgs/logo.png" class="logo m-1" alt="logo">
-            </div>
+            
              <div class="titulo-principal d-flex justify-content-center"> 
                     STUDIO AMPIA
             </div>
@@ -11,7 +9,11 @@ Vue.component('intro', {
                     Medici &nbsp;|&nbsp; Psicologi &nbsp; | &nbsp; Psicoterapeuti<br>
                     Specializzati in Infanzia ed Adolescienza
             </h5>
-           <hr class="mb-5">
+
+            <div class="d-flex justify-content-center">
+                <img src="imgs/logo.png" class="logo m-1" alt="logo">
+            </div>
+          
             <div>
                 <ul>
                     <li v-for= "intr of intro" class="text-center">
