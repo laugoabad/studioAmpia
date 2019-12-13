@@ -14,7 +14,7 @@ Vue.component('chisiamo', {
                     <h3 class="titulo-secundario">
                         {{chi.titulo}} 
                     </h3> 
-                    <ul class="texto-normal">
+                    <ul>
                        <li v-for="cont of chi.contenido">
                             <p>
                                {{cont.texto}}

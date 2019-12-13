@@ -2,15 +2,17 @@ Vue.component('servizi', {
     template: //html
         `
     <div class="container">
-       <h2 class="col-12 text-center titulo-seccion">Servizi</h2>
+       <hr class="mb-5">
+       <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
         <div v-if="!leerMas">
-            <div class="row d-flex justify-content-center">
-              <article v-for="(item, index) of items" class="card col-11 col-md-8 col-lg-5" @click="checkLeerMas(index)" >
-                 <img v-bind:src="item.imagen"  class="card-img-top" alt="">
+            <div class="row">
+              <article v-for="(item, index) of items" class="card col-10 col-md-6 col-lg-4" @click="checkLeerMas(index)" >
+                 <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
                  <div class="card-body">
-                    <p class="card-text">
+                    <h5 class="card-title text-center mt-3">
                      {{item.titulo}}
-                    </p> 
+                    </h5>
+                    <button class="btn btn-info d-flex justify-content-right"> +info</button>
                  </div>    
                  
               </article>
@@ -29,7 +31,7 @@ Vue.component('servizi', {
                         </ul>
                     </div>
                 </div>
-                <button class="btn btn-lg" @click="leerMas = !leerMas">Volver</button>
+                <button class="btn btn-info" @click="leerMas = !leerMas">Volver</button>
             </article>
         </template>
     </div>
@@ -46,7 +48,7 @@ Vue.component('servizi', {
                     texto: 'L’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.'
                 }
             ],
-            
+
             items: [
                 { 
                     titulo: 'Sostegno e Trattamento Individuale per bambini, giovani e adulti',

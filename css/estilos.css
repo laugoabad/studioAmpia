@@ -7,6 +7,7 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
 
 body {
@@ -54,12 +55,17 @@ header {
 #chi-siamo ul {
     padding: 1rem 2rem;
 }
+
 #chi-siamo li {
     margin-top: 3rem;
 }
 
 #chi-siamo li ul li {
     margin-top: 0.5rem;
+}
+
+#chi-siamo p {
+    font-size: 1.2rem;
 }
 
 .titulo-principal {
@@ -94,8 +100,8 @@ li {
 .card {
     font-size: 2rem;
     font-weight: 600;
-    margin: 1rem;
-    padding: 3rem;
+    margin: 2rem;
+    padding: 3rem 2rem;
     border-radius: 1rem;
     background-color: whitesmoke;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -114,6 +120,10 @@ li {
 
 .servizi-esteso {
     padding: 6rem;
+}
+
+.card-title {
+    font-size: 2rem;
 }
 
 .servizi-esteso .card-title {
@@ -146,7 +156,6 @@ li {
     color: white;
     padding: 1rem 3rem;
     margin: 3rem;
-    background-color: cornflowerblue;
 }
 
 @media (min-width:768px) {
@@ -161,7 +170,7 @@ li {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
     }
-    #intro p {
+    #intro p, #chi-siamo p {
         font-size: 1.7rem;
     }
 }
@@ -194,7 +203,7 @@ li {
     .logo {
         width: 8rem;
     }
-    #intro p {
+    #intro p, #chi-siamo p {
         font-size: 1.9rem;
     }
 }
