@@ -38,6 +38,15 @@ Vue.component('servizi', {
     data() {
         return {
             leerMas: false,
+            intro: [
+                {
+                    texto: 'Lo studio offre un servizio qualificato di psicodiagnosi, sostegno e psicoterapia, dedicato a famiglie, genitori, adolescenti, bambini e adulti, in un contesto protetto, inclusivo ed accogliente.'
+                },
+                {
+                    texto: 'L’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.'
+                }
+            ],
+            
             items: [
                 { 
                     titulo: 'Sostegno e Trattamento Individuale per bambini, giovani e adulti',

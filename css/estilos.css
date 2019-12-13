@@ -19,6 +19,10 @@ body {
     background-color: white;
 }
 
+section {
+    margin-top: 3rem;
+}
+
 header {
     margin-top: 10rem
 }
@@ -30,71 +34,61 @@ header {
 }
 
 .nav-item {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-right: 3rem;
 }
 
-.caja-derecha ul {
+#intro ul {
     margin-bottom: 0;
-    padding: 15%;
+    padding: 5% 10%;
     background-color: whitesmoke;
 }
 
-.caja-derecha p {
-    font-size: 1.4rem;
+#intro p {
+    font-size: 1.2rem;
     font-weight: 600;
     color: black;
     padding: 0.5rem;
 }
 
-.caja-izquierda {
-    background-image: url("../imgs/16365-r.png");
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding: 40%;
+#chi-siamo ul {
+    padding: 1rem 2rem;
+}
+#chi-siamo li {
+    margin-top: 3rem;
 }
 
-#chi-siamo, #intro {
-    padding-right: 10%;
-    padding-left: 10%;
+#chi-siamo li ul li {
+    margin-top: 0.5rem;
 }
 
 .titulo-principal {
     font-size: 3rem;
     font-family: 'Cinzel', serif;
-    margin: 3rem 0rem 0rem 0;
+    margin: 2rem 0rem 0rem 0;
 }
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     letter-spacing: 0.2rem;
-    margin-bottom: 5%;
 }
 
 .titulo-seccion {
-    font-size: 4rem;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    font-size: 2.5rem;
 }
 
-.parrafo {
-    font-size: 1.6rem;
+.texto-normal {
+    font-size: 1.2rem;
 }
 
 li {
     list-style-type: none;
 }
 
-.foto {
-    min-width: 80px;
-    max-height: 65px;
-    border-radius: 50%;
-    width: 20px;
+.logo {
+    width: 4rem;
 }
 
 .card {
@@ -160,37 +154,47 @@ li {
         font-size: 1.5em;
     }
     .titulo-principal {
-        font-size: 5.5rem;
+        font-size: 5rem;
         letter-spacing: 0.7rem;
     }
     .titulo-secundario {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
-        margin-bottom: 8rem;
     }
-    .parrafo {
-        font-size: 2rem;
-    }
-    .caja-derecha p {
-        font-size: 1.8rem;
+    #intro p {
+        font-size: 1.7rem;
     }
 }
 
 @media (min-width:1024px) {
-    .caja-derecha p {
-        font-size: 1.6rem;
+    section {
+        margin-top: 8rem;
     }
-    .caja-izquierda {
-        padding: 0rem
+    .titulo-seccion {
+        font-size: 4rem;
+    }
+    .titulo-principal {
+        font-size: 5rem;
+    }
+    .titulo-secundario {
+        font-size: 1.8rem;
+    }
+    .logo {
+        width: 7rem;
     }
 }
 
 @media (min-width:1440px) {
-    .caja-derecha p {
+    .titulo-principal {
+        font-size: 6rem;
+    }
+    .titulo-secundario {
         font-size: 2rem;
     }
-    #chi-siamo, #intro {
-        padding-right: 15%;
-        padding-left: 15%;
+    .logo {
+        width: 8rem;
+    }
+    #intro p {
+        font-size: 1.9rem;
     }
 }
