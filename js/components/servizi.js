@@ -12,8 +12,8 @@ Vue.component('servizi', {
                     <h5 class="card-title text-center mb-5">
                      {{item.titulo}}
                     </h5>
-                    <div class="text-center">
-                       <button class="btn mt-auto col-4"> +info</button>
+                    <div class="text-center info">+info
+                       <!--<button class="boton mt-auto col-3"> +info</button>-->
                     </div>
                  </div>    
                  

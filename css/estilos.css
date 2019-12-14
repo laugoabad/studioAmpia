@@ -39,7 +39,7 @@ header {
 }
 
 .nav-item {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 3rem;
 }
 
@@ -155,18 +155,14 @@ li {
     height: auto;
 }
 
-.btn {
-    font-size: 2rem;
-    border: 2px solid darkgrey;
-    color: #ff7315;
-    padding: 0.5rem;
+.info {
+    font-size: 1.2rem;
     position: absolute;
     bottom: 2rem;
-    left: 35%;
 }
 
-.btn:hover {
-    background-color: #ff7315;
+.info:hover {
+    color: #ff7315;
 }
 
 @media (min-width:768px) {
@@ -204,6 +200,9 @@ li {
     }
     .card-title {
         font-size: 1.8rem;
+    }
+    .info {
+        font-size: 1.6rem;
     }
 }
 
