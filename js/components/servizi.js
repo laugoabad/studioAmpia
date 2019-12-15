@@ -1,9 +1,9 @@
 Vue.component('servizi', {
     template: //html
         `
-    <div class="container">
-       <hr class="mb-5">
+    <div class="container mb-5">
        <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
+       <h4 class="texto-intro texto-normal d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</h4>
         <div v-if="!leerMas">
             <div class="row d-flex justify-content-center">
               <article v-for="(item, index) of items" class="card col-10 col-md-6 col-lg-4" @click="checkLeerMas(index)" >
@@ -12,11 +12,9 @@ Vue.component('servizi', {
                     <h5 class="card-title text-center mb-5">
                      {{item.titulo}}
                     </h5>
-                    <div class="text-center info">+info
-                       <!--<button class="boton mt-auto col-3"> +info</button>-->
+                    <div class="info float-right">+info
                     </div>
                  </div>    
-                 
               </article>
             </div> 
         </div>
@@ -33,7 +31,7 @@ Vue.component('servizi', {
                         </ul>
                     </div>
                 </div>
-                <button class="btn btn-info" @click="leerMas = !leerMas">Volver</button>
+                <button class="boton" @click="leerMas = !leerMas">Torna indietro</button>
             </article>
         </template>
     </div>
@@ -42,14 +40,7 @@ Vue.component('servizi', {
     data() {
         return {
             leerMas: false,
-            intro: [
-                {
-                    texto: 'Lo studio offre un servizio qualificato di psicodiagnosi, sostegno e psicoterapia, dedicato a famiglie, genitori, adolescenti, bambini e adulti, in un contesto protetto, inclusivo ed accogliente.'
-                },
-                {
-                    texto: 'L’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.'
-                }
-            ],
+            intro: 'Lo studio offre un servizio qualificato di psicodiagnosi, sostegno e psicoterapia, dedicato a famiglie, genitori, adolescenti, bambini e adulti, in un contesto protetto, inclusivo ed accogliente.\nL’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.',
 
             items: [
                 { 

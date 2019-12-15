@@ -13,11 +13,10 @@ Vue.component('intro', {
             <div class="d-flex justify-content-center">
                 <img src="imgs/logo.png" class="logo m-1" alt="logo">
             </div>
-          
             <div>
-                <ul>
+                <ul class="card">
                     <li v-for= "intr of intro" class="text-center">
-                        <p class="texto-normal">
+                        <p>
                             {{intr.texto}}
                         </p> 
                     </li>

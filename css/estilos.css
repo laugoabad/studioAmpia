@@ -14,7 +14,7 @@ body {
     width: 100%;
     font-size: 100%;
     font-family: 'Raleway', sans-serif;
-    color: #1d4d4f;
+    color: black;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
@@ -35,7 +35,7 @@ header {
 }
 
 .navbar {
-    background-color: #6ba8a9;
+    background-color: #616f39;
 }
 
 .nav-item {
@@ -43,22 +43,23 @@ header {
     margin-right: 3rem;
 }
 
-.nav-item a {
-    color: #1d4d4f;
+.navbar-light .navbar-nav .nav-link, .navbar-brand, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(256, 256, 256, 0.8);
     font-weight: 800;
+}
+
+.nav-item a:hover {
+    color: #a7d129
 }
 
 #intro ul {
     margin-bottom: 0;
     margin-top: 8rem;
     padding: 5% 10%;
-    background-color: #e5dfdf;
+    background-color: #f0ece2;
 }
 
 #intro p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
     padding: 0.5rem;
 }
 
@@ -72,10 +73,6 @@ header {
 
 #chi-siamo li ul li {
     margin-top: 0.5rem;
-}
-
-#chi-siamo p {
-    font-size: 1.2rem;
 }
 
 .titulo-principal {
@@ -93,11 +90,14 @@ header {
 
 .titulo-seccion {
     font-size: 2.5rem;
-    color: #357376;
+    color: #616f39;
+    font-weight: 600;
 }
 
 .texto-normal {
     font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
 }
 
 li {
@@ -108,15 +108,16 @@ li {
     width: 4rem;
 }
 
-.efecto-hover:hover+p.colapsa {
-    display: block;
-    opacity: 1;
+.efecto-hover {
+    cursor: pointer;
 }
 
-.colapsa {
-    display: none;
-    opacity: 0;
-    transition: opacity 1s;
+.texto-intro {
+    margin: 5rem
+}
+
+.texto-intro.texto-normal {
+    font-weight: 600;
 }
 
 .card {
@@ -125,12 +126,17 @@ li {
     margin: 2rem;
     padding: 3rem 2rem;
     border-radius: 1rem;
-    background-color: whitesmoke;
+    background-color: #ede6de;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1);
     -moz-transform: scale(1);
     transition-duration: 1s;
     -moz-transition-duration: 1s;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .card:hover {
@@ -140,19 +146,40 @@ li {
     -moz-transition-duration: 1s;
 }
 
-.servizi-esteso {
-    padding: 6rem;
+.card-img-top {
+    width: 20%;
+    height: auto;
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
+.boton {
+    background-color: #a7d129;
+    color: #f8eeb4;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 3rem;
+    font-size: 1.6rem;
+}
+
+.info {
+    opacity: 0.5;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 2rem;
+}
+
+.info:hover {
+    color: #a7d129;
+    opacity: 1;
+}
+
+.servizi-esteso {
+    padding: 6rem;
 }
 
 .servizi-esteso .card-title {
     font-size: 3rem;
     font-weight: bold;
-    color: #ff7315;
+    color: #616f39;
     margin-bottom: 5rem;
 }
 
@@ -161,22 +188,7 @@ li {
     padding-right: 8rem;
 }
 
-.card-img-top {
-    width: 20%;
-    height: auto;
-}
-
-.info {
-    opacity: 0.4;
-    font-size: 1.2rem;
-    position: absolute;
-    bottom: 2rem;
-}
-
-.info:hover {
-    color: #ff7315;
-    opacity: 1;
-}
+/* --------------------------------------------------------------------------------- */
 
 @media (min-width:768px) {
     .navbar-brand {
@@ -190,17 +202,19 @@ li {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
     }
-    #intro p, #chi-siamo p {
+    .texto-normal {
         font-size: 1.7rem;
     }
 }
 
+/* ---------------------------------------------------------------------------------------------- */
+
 @media (min-width:1024px) {
     section {
-        margin-top: 8rem;
+        margin-top: 9rem;
     }
     .titulo-seccion {
-        font-size: 4.4rem;
+        font-size: 4rem;
     }
     .titulo-principal {
         font-size: 5rem;
@@ -208,34 +222,30 @@ li {
     .titulo-secundario {
         font-size: 1.8rem;
     }
+    .texto-normal {
+        font-size: 1.7rem;
+    }
     .logo {
-        width: 7rem;
+        width: 9rem;
+    }
+    .card {
+        font-size: 1.6rem;
     }
     .card-title {
         font-size: 1.8rem;
+    }
+    .servizi-esteso .card-title {
+        font-size: 2.4rem;
     }
     .info {
         font-size: 1.6rem;
     }
 }
 
+/* ---------------------------------------------------------------------- */
+
 @media (min-width:1440px) {
-    .titulo-principal {
-        font-size: 6rem;
-    }
-    .titulo-secundario {
-        font-size: 2rem;
-    }
-    .logo {
-        width: 11rem;
-    }
     #intro {
         margin-top: 14rem;
-    }
-    #intro p, #chi-siamo p {
-        font-size: 1.9rem;
-    }
-    .card-title {
-        font-size: 2rem;
     }
 }

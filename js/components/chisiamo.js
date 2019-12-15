@@ -1,22 +1,22 @@
 Vue.component('chisiamo', {
     template: //html
     `
-    <div>
-    <hr class="mb-5">
+    <div title="lascia il cursore sul nome per leggere il CV">
         <div class="d-flex justify-content-center">
-            
             <h2 class="text-center titulo-seccion">Chi Siamo
             </h2>
         </div>
-        <div class="d-flex ">
+        <div>
             <ul>
-                <li v-for= "chi of chiSiamo" >
-                    <h3 class="titulo-secundario efecto-hover">
-                        {{chi.titulo}} 
-                    </h3> 
-                    <p style="white-space:pre-wrap;" class="colapsa">
+                <li v-for= "(chi, index) of chiSiamo" class="text-center">
+                    <h3 class="titulo-secundario show">
+                        {{chi.titulo}}<span>&nbsp;&nbsp;<img src="imgs/iconmonstr-arrow-80-240.png" alt="" width="20" data-toggle="collapse" :data-target="'#cv'+index"> </span>
+                    </h3>
+                    <div class="collapse texto-normal" :id="'cv'+index">
+                    <p style="white-space:pre-wrap;">
                         {{chi.texto}}
                     </p>
+                    </div>
                 </li>
             </ul>
         </div>
