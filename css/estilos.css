@@ -108,6 +108,17 @@ li {
     width: 4rem;
 }
 
+.efecto-hover:hover+p.colapsa {
+    display: block;
+    opacity: 1;
+}
+
+.colapsa {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 .card {
     font-size: 2rem;
     font-weight: 600;
@@ -156,6 +167,7 @@ li {
 }
 
 .info {
+    opacity: 0.4;
     font-size: 1.2rem;
     position: absolute;
     bottom: 2rem;
@@ -163,6 +175,7 @@ li {
 
 .info:hover {
     color: #ff7315;
+    opacity: 1;
 }
 
 @media (min-width:768px) {
