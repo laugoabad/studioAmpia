@@ -20,11 +20,11 @@ Vue.component('navegacion', {
                         <li class="nav-item">
                             <a class="nav-link" href="#servizi" >Servizi</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#eventi">Eventi</a>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#aree">Aree d'Interesse</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#aree">Aree di Interesse</a>
+                            <a class="nav-link" href="#eventi">Eventi</a>
                         </li>
                     </ul>
                 </div>

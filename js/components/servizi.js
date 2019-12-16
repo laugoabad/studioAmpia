@@ -1,19 +1,20 @@
 Vue.component('servizi', {
     template: //html
         `
-    <div class="container my-5 py-5 fondo-medio">
-       <h2 class="text-center titulo-seccion texto-claro mb-5">Servizi</h2>
-       <div class="row mt-5 mb-5">
-          <div class="caja-izq col-12 col-md-6">
-          </div>
-          <div class="caja-der col-12 col-md-6">
-              <p class="texto-intro texto-normal d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</p>
-          </div>
-       </div>
-
+    <div class="container-fluid my-5 py-5">
+        <div class= "container-servizi">
+           <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
+           <div class="row">
+                <div class="caja-izq col-12 col-lg-7 col-md-6">
+                </div>
+                <div class="caja-der col-12 col-lg-5 col-md-6">
+                   <p class=" d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</p>
+                </div>
+            </div>
+        </div>
         <div v-if="!leerMas">
             <div class="row d-flex justify-content-center mx-3">
-              <article v-for="(item, index) of items" class="card col-12 col-md-4 col-xl-3" @click="checkLeerMas(index)" >
+              <article v-for="(item, index) of items" class="card col-8 col-md-3 col-xl-2" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
                  <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-center mb-5">
@@ -31,7 +32,7 @@ Vue.component('servizi', {
                 <div class="card servizi-esteso col-12">
                     <div class="card-body">
                         <h5 class="card-title text-center">{{items[i].titulo}}</h5>
-                           <p class="p-5" style="white-space:pre-line;">
+                           <p class="p-3" style="white-space:pre-line;">
                            {{items[i].texto}}
                            </p>
                     </div>

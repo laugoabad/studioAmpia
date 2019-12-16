@@ -28,8 +28,9 @@ header {
     margin-top: 10rem
 }
 
-hr {
-    border-top: 1px solid #fbf0f0;
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .navbar-brand {
@@ -137,6 +138,12 @@ li {
     font-weight: 600;
 }
 
+.container-servizi {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .caja-izq {
     background-image: url("../imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.JPG");
     background-color: #cccccc;
@@ -150,11 +157,17 @@ li {
     color: #fbf0f0;
 }
 
+.caja-der p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 2rem;
+}
+
 .card {
-    font-size: 3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 2rem;
-    padding: 3rem 2rem;
+    padding: 3rem 1rem;
     border-radius: 1rem;
     background-color: #fbf0f0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -165,7 +178,7 @@ li {
 }
 
 .card-title {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -184,12 +197,12 @@ li {
 
 .boton {
     background-color: #7c7575;
-    width: 30%;
+    width: 40%;
     color: #fbf0f0;
     border-radius: 1rem;
     padding: 1rem 2rem;
     margin: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -211,14 +224,14 @@ li {
 }
 
 .servizi-esteso {
-    padding: 6rem;
+    padding: 2rem;
 }
 
 .servizi-esteso .card-title {
-    font-size: 3rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #7c7575;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
 }
 
 .servizi-esteso ul {
@@ -256,6 +269,10 @@ li {
         font-size: 1.4rem;
         padding: 4rem 6rem;
     }
+    .caja-der p {
+        font-size: 1.5rem;
+        padding: 2rem;
+    }
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -281,17 +298,34 @@ li {
     }
     .card {
         font-size: 1.6rem;
-        font-weight: 600;
-        margin: 3rem;
+        margin: 2rem;
         padding: 3rem 2rem;
     }
     .card-title {
         font-size: 1.8rem;
     }
+    .servizi-esteso {
+        padding: 6rem;
+    }
     .servizi-esteso .card-title {
         font-size: 2.4rem;
     }
     .info {
+        font-size: 1.6rem;
+    }
+    .caja-der p {
+        padding: 3rem;
+        font-size: 1.8rem;
+    }
+    .container-servizi {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boton {
+        width: 30%;
+        padding: 1rem 2rem;
+        margin: 3rem;
         font-size: 1.6rem;
     }
 }
@@ -304,5 +338,19 @@ li {
     }
     #chi-siamo {
         margin: 10rem;
+    }
+    .container-servizi {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card {
+        margin: 9rem;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .caja-der p {
+        font-size: 2rem;
     }
 }
