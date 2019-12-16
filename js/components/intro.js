@@ -1,23 +1,25 @@
 Vue.component('intro', {
     template: //html
         `<div>
-            
-             <div class="titulo-principal d-flex justify-content-center"> 
-                    STUDIO AMPIA
-            </div>
-            <h5 class=" text-center titulo-secundario d-flex justify-content-center mb-5 ">
-                    Medici &nbsp;|&nbsp; Psicologi &nbsp; | &nbsp; Psicoterapeuti<br>
-                    Specializzati in Infanzia ed Adolescienza
-            </h5>
-
-            <div class="d-flex justify-content-center">
-                <img src="imgs/logo.png" class="logo m-1" alt="logo">
-            </div>
-            <div>
-                <div class="card">
-                    <p style="white-space:pre-line;">
-                        {{texto}}
-                    </p> 
+            <div class="row">
+               <div class="col-xl-4 titulo-der">
+                   <div class="titulo-principal d-flex justify-content-center"> 
+                        STUDIO AMPIA
+                   </div>
+                    <h5 class=" text-center titulo-secundario d-flex justify-content-center mb-5 ">
+                          Medici &nbsp;|&nbsp; Psicologi &nbsp; | &nbsp; Psicoterapeuti<br>
+                         Specializzati in Infanzia ed Adolescienza
+                    </h5>
+                    <div class="d-flex justify-content-center">
+                        <img src="imgs/logo.png" class="logo m-1" alt="logo">
+                    </div>
+                </div>
+                <div class="col-xl-8">
+                    <div class="card">
+                        <p style="white-space:pre-line;">
+                            {{texto}}
+                        </p> 
+                </div>
                 </div>
             </div>
         </div>
