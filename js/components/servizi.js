@@ -3,7 +3,14 @@ Vue.component('servizi', {
         `
     <div class="container mb-5">
        <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
-       <h4 class="texto-intro texto-normal d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</h4>
+
+       <div class="row">
+          <div class="caja-izq col-6">
+          </div>
+          <div class="caja-der col-6">
+              <h4 class="texto-intro texto-normal d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</h4>
+          </div>
+       </div>
         <div v-if="!leerMas">
             <div class="row d-flex justify-content-center">
               <article v-for="(item, index) of items" class="card col-10 col-md-6 col-lg-4" @click="checkLeerMas(index)" >

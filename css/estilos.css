@@ -35,7 +35,7 @@ header {
 }
 
 .navbar {
-    background-color: #616f39;
+    background-color: #7c7575;
 }
 
 .nav-item {
@@ -52,15 +52,21 @@ header {
     color: #a7d129
 }
 
-#intro ul {
+#intro .card {
     margin-bottom: 0;
-    margin-top: 8rem;
-    padding: 5% 10%;
-    background-color: #f0ece2;
+    margin-top: 4rem;
+    padding: 5% 5%;
+    background-color: #dfd3d3;
+    background-image: url("../imgs/16365-crop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #intro p {
-    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: rgba(256, 256, 256, 0.6);
+    padding: 2rem 3rem;
 }
 
 #chi-siamo ul {
@@ -76,21 +82,21 @@ header {
 }
 
 .titulo-principal {
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-family: 'Cinzel', serif;
     margin: 2rem 0rem 0rem 0;
 }
 
 .titulo-secundario {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.3em;
+    font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
 }
 
 .titulo-seccion {
     font-size: 2.5rem;
-    color: #616f39;
+    color: #7c7575;
     font-weight: 600;
 }
 
@@ -105,11 +111,7 @@ li {
 }
 
 .logo {
-    width: 4rem;
-}
-
-.efecto-hover {
-    cursor: pointer;
+    width: 3.5rem;
 }
 
 .texto-intro {
@@ -118,6 +120,15 @@ li {
 
 .texto-intro.texto-normal {
     font-weight: 600;
+}
+
+.caja-izq {
+    background-image: url("../imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81.JPG");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
 }
 
 .card {
@@ -168,7 +179,7 @@ li {
 }
 
 .info:hover {
-    color: #a7d129;
+    color: black;
     opacity: 1;
 }
 
@@ -195,7 +206,7 @@ li {
         font-size: 1.5em;
     }
     .titulo-principal {
-        font-size: 5rem;
+        font-size: 4rem;
         letter-spacing: 0.7rem;
     }
     .titulo-secundario {
@@ -204,6 +215,16 @@ li {
     }
     .texto-normal {
         font-size: 1.7rem;
+    }
+    .logo {
+        width: 8rem;
+    }
+    #intro .card {
+        margin-top: 6rem;
+    }
+    #intro p {
+        font-size: 1.4rem;
+        padding: 4rem 6rem;
     }
 }
 
@@ -225,8 +246,8 @@ li {
     .texto-normal {
         font-size: 1.7rem;
     }
-    .logo {
-        width: 9rem;
+    #intro p {
+        font-size: 1.6rem;
     }
     .card {
         font-size: 1.6rem;

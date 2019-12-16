@@ -1,7 +1,7 @@
 Vue.component('chisiamo', {
     template: //html
     `
-    <div title="lascia il cursore sul nome per leggere il CV">
+    <div>
         <div class="d-flex justify-content-center">
             <h2 class="text-center titulo-seccion">Chi Siamo
             </h2>
