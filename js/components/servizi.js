@@ -13,15 +13,15 @@ Vue.component('servizi', {
        </div>
         <div v-if="!leerMas">
             <div class="row d-flex justify-content-center">
-              <article v-for="(item, index) of items" class="card col-10 col-md-6 col-lg-4" @click="checkLeerMas(index)" >
+              <article v-for="(item, index) of items" class="card col-12 col-md-4 col-xl-3" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
                  <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-center mb-5">
                      {{item.titulo}}
                     </h5>
-                    <div class="info float-right">+info
-                    </div>
-                 </div>    
+                 </div> 
+                 <div class="card-footer info float-right">+info
+                    </div>   
               </article>
             </div> 
         </div>

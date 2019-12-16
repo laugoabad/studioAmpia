@@ -95,9 +95,12 @@ header {
 }
 
 .titulo-seccion {
+    width: 100%;
     font-size: 2.5rem;
-    color: #7c7575;
+    color: #fbf0f0;
     font-weight: 600;
+    padding: 2rem;
+    background-color: #b8b0b0;
 }
 
 .texto-normal {
@@ -134,10 +137,10 @@ li {
 .card {
     font-size: 2rem;
     font-weight: 600;
-    margin: 2rem;
+    margin: 3rem;
     padding: 3rem 2rem;
     border-radius: 1rem;
-    background-color: #ede6de;
+    background-color: #dfd3d3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1);
     -moz-transform: scale(1);
@@ -160,6 +163,7 @@ li {
 .card-img-top {
     width: 20%;
     height: auto;
+    margin-bottom: 2rem;
 }
 
 .boton {
@@ -172,10 +176,15 @@ li {
 }
 
 .info {
-    opacity: 0.5;
+    border: 1.5px solid black;
+    background-color: rgba(256, 256, 256, 0.4);
+    color: #7c7575;
     font-size: 1.2rem;
-    position: absolute;
-    bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2rem;
+    padding: 0.6rem 3.6rem;
+    cursor: pointer;
 }
 
 .info:hover {
