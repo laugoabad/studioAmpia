@@ -153,14 +153,13 @@ li {
 }
 
 .caja-der {
-    background-color: #7c7575;
-    color: #fbf0f0;
+    color: black;
 }
 
 .caja-der p {
     font-size: 1.4rem;
     font-weight: 600;
-    padding: 2rem;
+  
 }
 
 .card {
