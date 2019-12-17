@@ -69,7 +69,7 @@ header {
 }
 
 #intro p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: rgba(256, 256, 256, 0.6);
     padding: 2rem 2rem;
 }
@@ -131,12 +131,11 @@ li {
 }
 
 .texto-intro {
-    margin: 3rem
-}
-
-.texto-intro.texto-normal {
+    margin: 3rem;
     font-weight: 600;
 }
+
+
 
 .container-servizi {
     width: 80%;
@@ -321,7 +320,7 @@ li {
         font-size: 1.8rem;
     }
     .container-servizi {
-        width: 70%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -358,7 +357,6 @@ li {
     .caja-der p {
         font-size: 2rem;
     }
-    
     .titulo {}
     .tarjeta {
         width: 80%;
