@@ -12,7 +12,7 @@ Vue.component('servizi', {
                 </div>
             </div>
         </div>
-        <div v-if="!leerMas">
+        <div v-if="!leerMas" class="mt-5">
             <div class="row d-flex justify-content-center mx-3">
               <article v-for="(item, index) of items" class="card col-8 col-md-3 col-xl-2" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
