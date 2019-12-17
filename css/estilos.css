@@ -195,7 +195,6 @@ li {
 
 .boton {
     background-color: #7c7575;
-    width: 40%;
     color: #fbf0f0;
     border-radius: 1rem;
     padding: 1rem 2rem;
@@ -251,6 +250,9 @@ li {
         font-size: 1.5rem;
         letter-spacing: 0.3rem;
     }
+    .titulo-seccion {
+        font-size: 3rem;
+    }
     .texto-normal {
         font-size: 1.7rem;
     }
@@ -270,6 +272,9 @@ li {
     .caja-der p {
         font-size: 1.5rem;
         padding: 2rem;
+    }
+    .titulo-seccion {
+        padding: 0 2rem;
     }
 }
 
@@ -321,10 +326,12 @@ li {
         margin-right: auto;
     }
     .boton {
-        width: 30%;
         padding: 1rem 2rem;
         margin: 3rem;
         font-size: 1.6rem;
+    }
+    .titulo-seccion {
+        padding: 0 3rem;
     }
 }
 
@@ -350,5 +357,12 @@ li {
     }
     .caja-der p {
         font-size: 2rem;
+    }
+    
+    .titulo {}
+    .tarjeta {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

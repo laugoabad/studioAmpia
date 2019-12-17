@@ -3,11 +3,12 @@ Vue.component('servizi', {
         `
     <div class="container-fluid my-5 py-5">
         <div class= "container-servizi">
-           <h2 class="text-center titulo-seccion mb-5">Servizi</h2>
+           
            <div class="row">
                 <div class="caja-izq col-12 col-lg-7 col-md-6">
                 </div>
                 <div class="caja-der col-12 col-lg-5 col-md-6">
+                  <h2 class="titulo-seccion mb-2">Servizi</h2>
                    <p class=" d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</p>
                 </div>
             </div>
