@@ -1,9 +1,9 @@
 Vue.component('intro', {
     template: //html
         `<div>
-            <div class="row">
-               <div class="col-xl-4 titulo-der">
-                   <div class="titulo-principal d-flex justify-content-center"> 
+           
+               <div class="col-xl-5 d-flex justify-content-left">
+                   <div class="titulo-principal text-center"> 
                         STUDIO AMPIA
                    </div>
                     <h5 class=" text-center titulo-secundario d-flex justify-content-center mb-5 ">
@@ -14,14 +14,14 @@ Vue.component('intro', {
                         <img src="imgs/logo.png" class="logo m-1" alt="logo">
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="card">
+                <div class="col-xl-9">
+                    <div class="card d-flex justify-content-right">
                         <p style="white-space:pre-line;">
                             {{texto}}
                         </p> 
                 </div>
                 </div>
-            </div>
+           
         </div>
     `,
 
