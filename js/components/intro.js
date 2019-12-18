@@ -6,7 +6,7 @@ Vue.component('intro', {
                    <div class="titulo-principal d-flex justify-content-center"> 
                         STUDIO AMPIA
                    </div>
-                    <h5 class=" text-center titulo-secundario d-flex justify-content-center mb-5 ">
+                    <h5 class=" text-center titulo-secundario d-flex justify-content-center mb-4 ">
                           Medici &nbsp;|&nbsp; Psicologi &nbsp; | &nbsp; Psicoterapeuti<br>
                          Specializzati in Infanzia ed Adolescienza
                     </h5>
