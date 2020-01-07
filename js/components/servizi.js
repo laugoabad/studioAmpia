@@ -3,7 +3,6 @@ Vue.component('servizi', {
         `
     <div class="container-fluid my-5 py-5">
         <div class= "container-servizi">
-           
            <div class="row">
                 <div class="caja-izq col-12 col-lg-7 col-md-6">
                 </div>
@@ -13,9 +12,10 @@ Vue.component('servizi', {
                 </div>
             </div>
         </div>
+
         <div v-if="!leerMas" class="mt-5">
-            <div class="row d-flex justify-content-center mx-3">
-              <article v-for="(item, index) of items" class="card col-8 col-md-3 col-xl-2" @click="checkLeerMas(index)" >
+            <div class="row d-flex justify-content-center mx-5">
+              <article v-for="(item, index) of items" class="card col-8 col-md-3 col-xl-3" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
                  <div class="card-body d-flex flex-column">
                     <h5 class="card-title text-center mb-5">
@@ -33,7 +33,7 @@ Vue.component('servizi', {
                 <div class="card servizi-esteso col-12">
                     <div class="card-body">
                         <h5 class="card-title text-center">{{items[i].titulo}}</h5>
-                           <p class="p-3" style="white-space:pre-line;">
+                           <p class="p-1" style="white-space:pre-line;">
                            {{items[i].texto}}
                            </p>
                     </div>

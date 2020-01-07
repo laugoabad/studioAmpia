@@ -74,7 +74,7 @@ header {
     padding: 1rem;
 }
 
-#chi-siamo {
+#chi-siamo, #aree {
     margin: 3rem;
 }
 
@@ -130,7 +130,7 @@ li {
     height: auto;
 }
 
-.container-servizi {
+.container-servizi, .container-aree {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -255,6 +255,9 @@ li {
         font-size: 1.4rem;
         padding: 4rem 6rem;
     }
+    #chi-siamo {
+        margin: 7rem;
+    }
     .caja-der p {
         font-size: 1.5rem;
         padding: 2rem;
@@ -262,87 +265,91 @@ li {
     .titulo-seccion {
         padding: 0 2rem;
     }
-    /* ---------------------------------------------------------------------------------------------- */
-    @media (min-width:1024px) {
-        section {
-            margin-top: 9rem;
-        }
-        .titulo-seccion {
-            font-size: 4rem;
-        }
-        .titulo-principal {
-            font-size: 4.5rem;
-        }
-        .titulo-secundario {
-            font-size: 1.7rem;
-        }
-        .texto-normal {
-            font-size: 1.7rem;
-        }
-        #intro p {
-            font-size: 1.6rem;
-        }
-        .card {
-            font-size: 1.6rem;
-            margin: 2rem;
-            padding: 3rem 2rem;
-        }
-        .card-title {
-            font-size: 1.8rem;
-        }
-        .servizi-esteso {
-            padding: 6rem;
-        }
-        .servizi-esteso .card-title {
-            font-size: 2.4rem;
-        }
-        .info {
-            font-size: 1.6rem;
-        }
-        .caja-der p {
-            padding: 3rem;
-            font-size: 1.8rem;
-        }
-        .container-servizi {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .boton {
-            padding: 1rem 2rem;
-            margin: 3rem;
-            font-size: 1.6rem;
-        }
-        .titulo-seccion {
-            padding: 0 3rem;
-        }
-    }
-    /* ---------------------------------------------------------------------- */
-    @media (min-width:1440px) {
-        #intro {
-            margin-top: 14rem;
-        }
-        #chi-siamo {
-            margin: 10rem;
-        }
-        .container-servizi {
-            width: 70%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .card {
-            margin: 4rem;
-        }
-        .card-title {
-            font-size: 2rem;
-        }
-        .caja-der p {
-            font-size: 2rem;
-        }
+}
 
-        .tarjeta {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
+/* ---------------------------------------------------------------------------------------------- */
+
+@media (min-width:1024px) {
+    section {
+        margin-top: 9rem;
     }
+    .titulo-seccion {
+        font-size: 4rem;
+    }
+    .titulo-principal {
+        font-size: 4.5rem;
+    }
+    .titulo-secundario {
+        font-size: 1.7rem;
+    }
+    .texto-normal {
+        font-size: 1.7rem;
+    }
+    #intro p {
+        font-size: 1.6rem;
+    }
+    .card {
+        font-size: 1.6rem;
+        margin: 2rem;
+        padding: 3rem 2rem;
+    }
+    .card-title {
+        font-size: 1.8rem;
+    }
+    .servizi-esteso {
+        padding: 6rem;
+    }
+    .servizi-esteso .card-title {
+        font-size: 2.4rem;
+    }
+    .info {
+        font-size: 1.6rem;
+    }
+    .caja-der p {
+        padding: 3rem;
+        font-size: 1.8rem;
+    }
+    .container-servizi {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .boton {
+        padding: 1rem 2rem;
+        margin: 3rem;
+        font-size: 1.6rem;
+    }
+    .titulo-seccion {
+        padding: 0 3rem;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+@media (min-width:1440px) {
+    #intro {
+        margin-top: 14rem;
+    }
+    #chi-siamo {
+        margin: 10rem;
+    }
+    .container-servizi, .container-aree {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card {
+        margin: 4rem;
+    }
+    .card-title {
+        font-size: 2rem;
+    }
+    .caja-der p {
+        font-size: 2rem;
+    }
+    .tarjeta {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
