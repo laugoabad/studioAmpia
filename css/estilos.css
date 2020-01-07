@@ -137,7 +137,7 @@ li {
 }
 
 .caja-izq {
-    background-image: url("../imgs/imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.jpg");
+    background-image: url("../imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,14 +195,15 @@ li {
 }
 
 .info {
-    border: 1.5px solid black;
+    border: 1px solid grey;
     background-color: rgba(256, 256, 256, 0.4);
+    border-radius: 1rem;
     color: #7c7575;
     font-size: 1.2rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 2rem;
-    padding: 0.6rem 3.6rem;
+    padding: 0.5rem 1.5rem;
     cursor: pointer;
 }
 

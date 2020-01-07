@@ -22,7 +22,7 @@ Vue.component('servizi', {
                      {{item.titulo}}
                     </h5>
                  </div> 
-                 <div class="card-footer info float-right">+info
+                 <div class="info float-right">+info
                  </div>   
               </article>
             </div> 
