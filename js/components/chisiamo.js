@@ -20,7 +20,7 @@ Vue.component('chisiamo', {
                         <p v-show="leerMas" style="white-space:pre-line;">
                             {{item.texto2}}
                         </p>
-                        <span>.....&nbsp;&nbsp;</span>
+                        
                         <button class="btn btn-light btn-lg" @click="leerMas =! leerMas">
                           <span v-if="leerMas">Read Less</span>
                           <span v-else>Read More</span>
