@@ -18,7 +18,7 @@ Vue.component('servizi', {
               <article v-for="(item, index) of items" class="card col-8 col-md-3 col-xl-3" @click="checkLeerMas(index)" >
                  <img v-bind:src="item.imagen"  class="card-img-top mx-auto" alt="">
                  <div class="card-body d-flex flex-column">
-                    <h5 class="card-title text-center mb-5">
+                    <h5 class="card-title text-center mb-1">
                      {{item.titulo}}
                     </h5>
                  </div> 
