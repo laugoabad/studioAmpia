@@ -22,8 +22,8 @@ Vue.component('chisiamo', {
                         </p>
                         
                         <button class="btn btn-light btn-lg" @click="leerMas =! leerMas">
-                          <span v-if="leerMas">Read Less</span>
-                          <span v-else>Read More</span>
+                          <span v-if="leerMas">Leggere -</span>
+                          <span v-else>Leggere +</span>
                         </button>
                     </div>
                 </li>
