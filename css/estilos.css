@@ -75,11 +75,16 @@ header {
 }
 
 #chi-siamo, #aree {
-    margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 #chi-siamo li {
     margin-top: 3rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #chi-siamo img {
@@ -257,9 +262,7 @@ li {
         font-size: 1.4rem;
         padding: 4rem 6rem;
     }
-    #chi-siamo {
-        margin: 7rem;
-    }
+
     .caja-der p {
         font-size: 1.5rem;
         padding: 2rem;
@@ -272,6 +275,7 @@ li {
 /* ---------------------------------------------------------------------------------------------- */
 
 @media (min-width:1024px) {
+
     section {
         margin-top: 9rem;
     }
@@ -286,6 +290,13 @@ li {
     }
     .texto-normal {
         font-size: 1.7rem;
+    }
+    #intro {
+        margin-top: 14rem;
+    }
+    #chi-siamo, #aree {
+        margin-top: 15rem;
+        width: 80%;
     }
     #intro p {
         font-size: 1.6rem;
@@ -311,10 +322,8 @@ li {
         padding: 3rem;
         font-size: 1.8rem;
     }
-    .container-servizi {
+    .container-servizi, .container-aree {
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
     }
     .boton {
         padding: 1rem 2rem;
@@ -329,17 +338,6 @@ li {
 /* ---------------------------------------------------------------------- */
 
 @media (min-width:1440px) {
-    #intro {
-        margin-top: 14rem;
-    }
-    #chi-siamo {
-        margin: 10rem;
-    }
-    .container-servizi, .container-aree {
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .card {
         margin: 4rem;
     }
