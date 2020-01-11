@@ -240,6 +240,7 @@ li {
     }
     .titulo-seccion {
         font-size: 3rem;
+        padding: 0 2rem;
     }
     .texto-normal {
         font-size: 1.7rem;
@@ -261,9 +262,6 @@ li {
     .caja-der p {
         font-size: 1.5rem;
         padding: 2rem;
-    }
-    .titulo-seccion {
-        padding: 0 2rem;
     }
 }
 

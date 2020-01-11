@@ -6,30 +6,39 @@ Vue.component('aree', {
                 <h2 class="titulo-seccion">Aree d'Interesse
                 </h2>
             </div>
-            <div class="container-aree">
+            <div v-if="!leerMas" class="container-aree">
                 <ul>
                     <li v-for= "(item, index) of items" >
-                        <h2 class=" show mt-5 font-weight-bold">
+                        <h2 class="mt-5 font-weight-bold">
                             {{item.titulo}}
                         </h2>
                         <div class="texto-normal">
                             <p style="white-space:pre-line;" class="mt-n3">
                                 {{item.texto1}}
-                                <span v-if="leerMas"></span>
-                                
+                                <button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
+                                   <span v-if="leerMas">Leggere -</span>
+                                   <span v-else>Leggere +</span>
+                                </button> 
                             </p>
-                            <p v-show="leerMas" style="white-space:pre-line;" @click="checkLeerMas(index)">
-                                {{item.texto2}}
-                            </p>
-                            <span>.....&nbsp;&nbsp;</span>
-                            <button class="btn btn-light btn-lg" @click="leerMas =! leerMas">
-                               <span v-if="leerMas">Read Less</span>
-                               <span v-else>Read More</span>
-                            </button>
                         </div>
                     </li>
                 </ul>
             </div>
+
+            <template v-else>
+            <h2 class="mt-5 font-weight-bold">
+                {{items[i].titulo}}
+            </h2>
+            <div style="white-space:pre-line;" class="texto-normal mt-n3">
+                {{items[i].texto1}}
+                {{items[i].texto2}}    
+                <button class="btn btn-light btn-lg" @click= "leerMas=!leerMas">
+                    <span v-if="leerMas">Leggere -</span>
+                    <span v-else>Leggere +</span>
+                </button>
+                      
+            </div> 
+        </template>
         </div>
         `,
 

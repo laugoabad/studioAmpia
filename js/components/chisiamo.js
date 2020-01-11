@@ -16,10 +16,10 @@ Vue.component('chisiamo', {
                     <p style="white-space:pre-line;" class="texto-normal mt-n3">
                         {{item.texto1}}
                              
-                        <button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
+                        <a href="#chi-siamo"><button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
                         <span v-if="leerMas">Leggere -</span>
                         <span v-else>Leggere +</span>
-                        </button>
+                        </button></a>
                     </p> 
                 </li>
             </ul>
@@ -28,17 +28,15 @@ Vue.component('chisiamo', {
             <h3 class="titulo-secundario mt-5 ml-5">
                 {{chiSiamo[i].titulo}}
             </h3>
-            <li style="white-space:pre-line;" class="texto-normal mt-n3">
+            <div style="white-space:pre-line;" class="texto-normal">
                 {{chiSiamo[i].texto1}}
                 {{chiSiamo[i].texto2}}    
                 <button class="btn btn-light btn-lg" @click= "leerMas=!leerMas">
                     <span v-if="leerMas">Leggere -</span>
                     <span v-else>Leggere +</span>
-                </button>
-                      
-            </li> 
+                </button>       
+            </div> 
         </template>
-        </div>
     </div>
     `,
 
@@ -76,7 +74,6 @@ Vue.component('chisiamo', {
         checkLeerMas(index) {
             this.leerMas = !this.leerMas;
             this.i = index
-            console.log('index')
         }
     }
 });
