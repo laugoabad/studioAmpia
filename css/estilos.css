@@ -37,6 +37,7 @@ header {
     font-family: 'Cinzel', serif;
     font-size: 1rem;
     font-weight: 600;
+    color: whitesmoke;
 }
 
 .navbar {
@@ -51,6 +52,10 @@ header {
 .navbar-light .navbar-nav .nav-link, .navbar-brand, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
     color: rgba(256, 256, 256, 0.8);
     font-weight: 800;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../imgs/icons8-menu-26.png");
 }
 
 #intro .card {
