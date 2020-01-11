@@ -15,10 +15,10 @@ Vue.component('aree', {
                         <div class="texto-normal">
                             <p style="white-space:pre-line;" class="mt-n3">
                                 {{item.texto1}}
-                                <button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
+                                <a href="#aree"><button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
                                    <span v-if="leerMas">Leggere -</span>
                                    <span v-else>Leggere +</span>
-                                </button> 
+                                </button> </a>
                             </p>
                         </div>
                     </li>
