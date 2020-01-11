@@ -6,29 +6,38 @@ Vue.component('chisiamo', {
             <h2 class="titulo-seccion">Chi Siamo
             </h2>
         </div>
+        <div v-if="!leerMas"> 
             <ul>
                 <li v-for= "(item, index) of chiSiamo" >
-                    <h3 class="titulo-secundario show">
+                    <h3 class="titulo-secundario">
                         {{item.titulo}}
                     </h3>
-                    <div class="texto-normal">
-                        <p style="white-space:pre-line;" class="mt-n3">
-                            {{item.texto1}}
-                      
-                        </p>
-                        
+                   
+                    <p style="white-space:pre-line;" class="texto-normal mt-n3">
+                        {{item.texto1}}
+                             
                         <button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
-                        <template v-if="leerMas" style="white-space:pre-line;">
-                            {{item[i].texto2}}
-                      
-                        </template>
-                          <span v-if="leerMas">Leggere -</span>
-                          <span v-else>Leggere +</span>
+                        <span v-if="leerMas">Leggere -</span>
+                        <span v-else>Leggere +</span>
                         </button>
-                        </p>
-                    </div>
+                    </p> 
                 </li>
             </ul>
+        </div>
+        <template v-else>
+            <h3 class="titulo-secundario mt-5 ml-5">
+                {{chiSiamo[i].titulo}}
+            </h3>
+            <li style="white-space:pre-line;" class="texto-normal mt-n3">
+                {{chiSiamo[i].texto1}}
+                {{chiSiamo[i].texto2}}    
+                <button class="btn btn-light btn-lg" @click= "leerMas=!leerMas">
+                    <span v-if="leerMas">Leggere -</span>
+                    <span v-else>Leggere +</span>
+                </button>
+                      
+            </li> 
+        </template>
         </div>
     </div>
     `,
@@ -40,8 +49,8 @@ Vue.component('chisiamo', {
             chiSiamo: [
                 {
                     titulo: 'Dott.ssa Federica Lavista',
-                    texto1: 'Laureata in Medicina e Chirurgia presso l’Università di Torino nel 2010, con tesi attinente a discipline psico-neuro-biochimiche,unisce da anni competenze pediatriche e psicoterapeutiche,prima in veste di medico frequentatore e tirocinante specializzanda,presso struttura ospedaliera (Ospedale Infantile Regina Margherita di Torino) e sul territorio (Torino e provincia), e successivamente in libera professione.',
-                    texto2: 'In formazione continua e costante, mediante partecipazione a convegni e seminari di aggiornamento su problematiche di ordine neuropsichiatrico e psicologico in età pediatrica, con particolare attenzione ai disturbi del sonno. Alterna occasioni di formazione e divulgazione, anche e soprattutto nell’ottica di tenere vivace il confronto con la pratica clinica.\n\n\nColtiva da sempre interesse specifico per la psico-neuro-endocrino-immunologia (PNEI), avendo lavorato col gruppo di ricerca della sezione di Neuroanatomia del Desarrollo dell’Universidad de Buenos Aires.Precedentemente e parallelamente alla formazione psicoterapeutica, ha concluso un lungo percorso di psicoterapia ad orientamento psicodinamico con terapeuta già membro ordinario della Società Gruppoanalitica Italiana.\n\nColloqui anche in lingua spagnola.'
+                    texto1: 'Laureata in Medicina e Chirurgia presso l’Università di Torino nel 2010, con tesi attinente a discipline psico-neuro-biochimiche, unisce da anni competenze pediatriche e psicoterapeutiche, prima in veste di medico frequentatore e tirocinante specializzanda, presso struttura ospedaliera (Ospedale Infantile Regina Margherita di Torino) e sul territorio (Torino e provincia), e successivamente in libera professione.',
+                    texto2: 'In formazione continua e costante, mediante partecipazione a convegni e seminari di aggiornamento su problematiche di ordine neuropsichiatrico e psicologico in età pediatrica, con particolare attenzione ai disturbi del sonno. Alterna occasioni di formazione e divulgazione, anche e soprattutto nell’ottica di tenere vivace il confronto con la pratica clinica.\n\nColtiva da sempre interesse specifico per la psico-neuro-endocrino-immunologia (PNEI), avendo lavorato col gruppo di ricerca della sezione di Neuroanatomia del Desarrollo dell’Universidad de Buenos Aires.Precedentemente e parallelamente alla formazione psicoterapeutica, ha concluso un lungo percorso di psicoterapia ad orientamento psicodinamico con terapeuta già membro ordinario della Società Gruppoanalitica Italiana.\n\nColloqui anche in lingua spagnola.'
                 },
                 {
                     titulo: 'Dott.ssa Jessyka Robiolio Bose',
@@ -67,7 +76,7 @@ Vue.component('chisiamo', {
         checkLeerMas(index) {
             this.leerMas = !this.leerMas;
             this.i = index
-            console.log('index',this.i)
+            console.log('index')
         }
     }
 });
