@@ -6,7 +6,6 @@ Vue.component('chisiamo', {
             <h2 class="titulo-seccion">Chi Siamo
             </h2>
         </div>
-
             <ul>
                 <li v-for= "(item, index) of chiSiamo" >
                     <h3 class="titulo-secundario show">
@@ -17,14 +16,16 @@ Vue.component('chisiamo', {
                             {{item.texto1}}
                       
                         </p>
-                        <p v-show="leerMas" style="white-space:pre-line;">
-                            {{item.texto2}}
-                        </p>
                         
-                        <button class="btn btn-light btn-lg" @click="leerMas =! leerMas">
+                        <button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
+                        <template v-if="leerMas" style="white-space:pre-line;">
+                            {{item[i].texto2}}
+                      
+                        </template>
                           <span v-if="leerMas">Leggere -</span>
                           <span v-else>Leggere +</span>
                         </button>
+                        </p>
                     </div>
                 </li>
             </ul>
@@ -66,6 +67,7 @@ Vue.component('chisiamo', {
         checkLeerMas(index) {
             this.leerMas = !this.leerMas;
             this.i = index
+            console.log('index',this.i)
         }
     }
 });
