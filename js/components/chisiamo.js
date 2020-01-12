@@ -16,7 +16,7 @@ Vue.component('chisiamo', {
                     <p style="white-space:pre-line;" class="texto-normal mt-n3">
                         {{item.texto1}}
                              
-                        <a href="#chi-siamo"><button class="btn btn-light btn-lg" @click= "checkLeerMas(index)">
+                        <a href="#chi-siamo"><button class="btn btn-secondary btn-lg" @click= "checkLeerMas(index)">
                         <span v-if="leerMas">Leggere -</span>
                         <span v-else>Leggere +</span>
                         </button></a>
@@ -31,7 +31,7 @@ Vue.component('chisiamo', {
             <div style="white-space:pre-line;" class="texto-normal">
                 {{chiSiamo[i].texto1}}
                 {{chiSiamo[i].texto2}}    
-                <button class="btn btn-light btn-lg" @click= "leerMas=!leerMas">
+                <button class="btn btn-secondary btn-lg" @click= "leerMas=!leerMas">
                     <span v-if="leerMas">Leggere -</span>
                     <span v-else>Leggere +</span>
                 </button>       
