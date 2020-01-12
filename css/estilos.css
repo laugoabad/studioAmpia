@@ -234,12 +234,12 @@ li {
     position: fixed;
     bottom: 0px;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     color: white;
 }
 
 .footer h3, .footer h4 {
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 .footer a {
