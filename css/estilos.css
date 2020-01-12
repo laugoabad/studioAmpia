@@ -235,11 +235,16 @@ li {
     bottom: 0px;
     width: 100%;
     padding: 2rem;
-    color: white
+    color: white;
 }
 
-.footer a{
-    color: white
+.footer h3, .footer h4 {
+    line-height: 2rem;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
 }
 
 /* --------------------------------------------------------------------------------- */
