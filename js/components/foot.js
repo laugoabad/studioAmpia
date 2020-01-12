@@ -1,7 +1,7 @@
 Vue.component('foot', {
     template: //html
         `<div>
-           <footer class="footer text-center">
+           <footer class="footer text-center mt-5">
                 <h5>
                    STUDIO AMPIA
                    <address>

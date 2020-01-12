@@ -1,7 +1,7 @@
 Vue.component('aree', {
     template: //html
         `
-        <div>
+        <div class="mb-5">
             <div classs="mx-3">
                 <h2 class="titulo-seccion">Aree d'Interesse
                 </h2>
@@ -9,13 +9,13 @@ Vue.component('aree', {
             <div v-if="!leerMas" class="container-aree">
                 <ul>
                     <li v-for= "(item, index) of items" >
-                        <h2 class="mt-5 font-weight-bold">
+                        <h3 class="mt-5 font-weight-bold">
                             {{item.titulo}}
-                        </h2>
+                        </h3>
                         <div class="texto-normal">
                             <p style="white-space:pre-line;" class="mt-n3">
                                 {{item.texto1}}
-                                <a href="#aree"><button class="btn btn-secondary btn-lg" @click= "checkLeerMas(index)">
+                                <a href="#aree"><button class="btn btn-secondary btn-lg " @click= "checkLeerMas(index)">
                                    <span v-if="leerMas">Leggere -</span>
                                    <span v-else>Leggere +</span>
                                 </button> </a>
@@ -26,13 +26,13 @@ Vue.component('aree', {
             </div>
 
             <template v-else>
-            <h2 class="mt-5 font-weight-bold">
+            <h3 class="mt-5 font-weight-bold">
                 {{items[i].titulo}}
-            </h2>
+            </h3>
             <div style="white-space:pre-line;" class="texto-normal mt-n3">
                 {{items[i].texto1}}
                 {{items[i].texto2}}    
-                <button class="btn btn-secondary btn-lg" @click= "leerMas=!leerMas">
+                <button class="btn btn-secondary btn-lg " @click= "leerMas=!leerMas">
                     <span v-if="leerMas">Leggere -</span>
                     <span v-else>Leggere +</span>
                 </button>
