@@ -229,6 +229,19 @@ li {
     margin-bottom: 1rem;
 }
 
+.footer {
+    background-color: #7c7575;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 2rem;
+    color: white
+}
+
+.footer a{
+    color: white
+}
+
 /* --------------------------------------------------------------------------------- */
 
 @media (min-width:768px) {
