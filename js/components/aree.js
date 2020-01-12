@@ -15,11 +15,12 @@ Vue.component('aree', {
                         <div class="texto-normal">
                             <p style="white-space:pre-line;" class="mt-n3">
                                 {{item.texto1}}
+                            </p>
                                 <a href="#aree"><button class="btn btn-secondary btn-lg " @click= "checkLeerMas(index)">
                                    <span v-if="leerMas">Leggere -</span>
                                    <span v-else>Leggere +</span>
                                 </button> </a>
-                            </p>
+                            
                         </div>
                     </li>
                 </ul>
@@ -29,15 +30,16 @@ Vue.component('aree', {
             <h3 class="mt-5 font-weight-bold">
                 {{items[i].titulo}}
             </h3>
-            <div style="white-space:pre-line;" class="texto-normal mt-n3">
+            <p style="white-space:pre-line;" class="texto-normal mt-n3">
                 {{items[i].texto1}}
-                {{items[i].texto2}}    
-                <button class="btn btn-secondary btn-lg " @click= "leerMas=!leerMas">
-                    <span v-if="leerMas">Leggere -</span>
-                    <span v-else>Leggere +</span>
-                </button>
+                {{items[i].texto2}}  
+            </p>   
+            <button class="btn btn-secondary btn-lg " @click= "leerMas=!leerMas">
+                <span v-if="leerMas">Leggere -</span>
+                <span v-else>Leggere +</span>
+            </button>
                       
-            </div> 
+           
         </template>
         </div>
         `,
