@@ -115,6 +115,10 @@ header {
     font-weight: 500;
 }
 
+.texto-chico {
+    font-size: 1.2rem;
+}
+
 .texto-oscuro {
     color: #7c7575;
 }
@@ -231,14 +235,14 @@ li {
 
 .footer {
     background-color: #7c7575;
-    position: fixed;
-    bottom: 0px;
+    /* position: fixed;
+    bottom: 0px; */
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
     color: white;
 }
 
-.footer h3, .footer h4 {
+.footer h5 {
     line-height: 1.8rem;
 }
 
@@ -266,7 +270,10 @@ li {
         padding: 0 2rem;
     }
     .texto-normal {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+    .texto-chico {
+        font-size: 1.2rem;
     }
     .logo {
         width: 9rem;
@@ -305,6 +312,9 @@ li {
     }
     .texto-normal {
         font-size: 1.7rem;
+    }
+    .texto-chico {
+        font-size: 1.4rem;
     }
     #intro {
         margin-top: 14rem;

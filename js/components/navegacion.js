@@ -26,7 +26,10 @@ Vue.component('navegacion', {
                         <li class="nav-item">
                             <a class="nav-link" href="#eventi">Eventi</a>
                         </li>
-                    </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#foot">Contatto</a>
+                        </li>
+                    </ul> 
                 </div>
             </nav> 
       </div>
