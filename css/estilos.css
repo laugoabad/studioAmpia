@@ -205,6 +205,10 @@ li {
     cursor: pointer;
 }
 
+.btn-secondary {
+    background-color: #b8b0b0;
+}
+
 .info {
     border: 1px solid grey;
     background-color: rgba(256, 256, 256, 0.4);
@@ -251,7 +255,6 @@ li {
     color: white;
     text-decoration: none;
 }
-
 
 /* --------------------------------------------------------------------------------- */
 

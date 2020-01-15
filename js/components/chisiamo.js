@@ -17,7 +17,7 @@ Vue.component('chisiamo', {
             <p style="white-space:pre-line;" class="collapse texto-normal mostrar0">
                 {{chiSiamo[0].texto2}}
             </p>
-             <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target=".mostrar0" @click= "leerMas0=!leerMas0">
+             <button type="button" class="btn btn-secondary " data-toggle="collapse" data-target=".mostrar0" @click= "leerMas0=!leerMas0">
                 <span v-if="leerMas0">Leggere&nbsp; -</span>
                 <span v-else>Leggere &nbsp; +</span>
             </button> 
@@ -32,7 +32,7 @@ Vue.component('chisiamo', {
             <p style="white-space:pre-line;" class="collapse texto-normal mostrar1">
                 {{chiSiamo[1].texto2}}
             </p>
-            <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target=".mostrar1" @click= "leerMas1=!leerMas1">
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target=".mostrar1" @click= "leerMas1=!leerMas1">
                 <span v-if="leerMas1">Leggere&nbsp; -</span>
                 <span v-else>Leggere&nbsp; +</span>
             </button> 
@@ -47,7 +47,7 @@ Vue.component('chisiamo', {
             <p style="white-space:pre-line;" class="collapse texto-normal mostrar2">
                 {{chiSiamo[2].texto2}}
             </p>
-            <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target=".mostrar2" @click= "leerMas2=!leerMas2">
+            <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target=".mostrar2" @click= "leerMas2=!leerMas2">
                 <span v-if="leerMas2">Leggere&nbsp; -</span>
                 <span v-else>Leggere&nbsp; +</span>
             </button> 
@@ -62,7 +62,7 @@ Vue.component('chisiamo', {
             <p style="white-space:pre-line;" class="collapse texto-normal mostrar3">
                 {{chiSiamo[3].texto2}}
             </p>
-             <button type="button" class="btn btn-secondary btn-lg" data-toggle="collapse" data-target=".mostrar3" @click= "leerMas3=!leerMas3">
+             <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target=".mostrar3" @click= "leerMas3=!leerMas3">
                 <span v-if="leerMas3">Leggere&nbsp; -</span>
                 <span v-else>Leggere&nbsp; +</span>
             </button> 
