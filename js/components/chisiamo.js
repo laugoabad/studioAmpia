@@ -106,10 +106,6 @@ Vue.component('chisiamo', {
             ]
         }
     },
-    methods: {
-        checkLeerMas(index) {
-            this.leerMas = !this.leerMas;           
-        }
-    },
+   
    
 });

@@ -164,7 +164,7 @@ li {
     font-weight: 600;
 }
 
-.card {
+#servizi .card {
     font-size: 1.3rem;
     font-weight: 600;
     margin: 2rem;
@@ -177,22 +177,57 @@ li {
     -moz-transition-duration: 1s;
 }
 
-.card-title {
+#servizi .card-title {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.card:hover {
+#servizi .card:hover {
     transform: scale(1.02);
     -moz-transform: scale(1.02);
     transition-duration: 1s;
     -moz-transition-duration: 1s;
 }
 
-.card-img-top {
+#servizi .card-img-top {
     width: 20%;
     height: auto;
     margin-bottom: 2rem;
+}
+
+#eventi article {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#eventi .card {
+    margin: 2rem;
+}
+
+#eventi img.card-img-top {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem;
+}
+
+#eventi .card-body {
+    background-color: #fbf0f0;
+    border-top: 1px solid black;
+    font-size: 1.2rem;
+}
+
+#eventi .card-body {
+    padding: 3rem;
+}
+
+#eventi .col-8 {
+    padding: 0rem;
+}
+
+#eventi .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 0rem;
 }
 
 .boton {
@@ -299,6 +334,7 @@ li {
         padding: 2rem;
     }
 }
+   
 
 /* ---------------------------------------------------------------------------------------------- */
 
@@ -331,12 +367,12 @@ li {
     #intro p {
         font-size: 1.6rem;
     }
-    .card {
+    #servizi .card {
         font-size: 1.6rem;
         margin: 2rem;
         padding: 3rem 2rem;
     }
-    .card-title {
+    #servizi .card-title {
         font-size: 1.8rem;
     }
     .servizi-esteso {
@@ -344,6 +380,16 @@ li {
     }
     .servizi-esteso .card-title {
         font-size: 2.4rem;
+    }
+    #eventi img.card-img-top {
+        width: 15rem;
+        height: 15rem;
+    }
+    #eventi .card-body {
+        font-size: 1.3rem;
+    }
+    #eventi .card-title {
+        font-size: 1.8rem;
     }
     .info {
         font-size: 1.6rem;
@@ -368,10 +414,10 @@ li {
 /* ---------------------------------------------------------------------- */
 
 @media (min-width:1440px) {
-    .card {
+    #servizi .card {
         margin: 4rem;
     }
-    .card-title {
+    #servizi .card-title {
         font-size: 2rem;
     }
     .caja-der p {
