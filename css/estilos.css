@@ -8,6 +8,7 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
+
 }
 
 body {
@@ -22,6 +23,7 @@ body {
 
 section {
     margin-top: 3rem;
+    -webkit-margin-top: 3rem;
 }
 
 header {
