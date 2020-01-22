@@ -3,12 +3,24 @@ Vue.component('servizi', {
         `
     <div class="container-fluid my-5 py-5">
         <div class= "container-servizi">
+           <h2 class="titulo-seccion text-center mb-5">Servizi</h2>
            <div class="row">
-                <div class="caja-izq col-12 col-lg-7 col-md-6">
+                <div class="col-12 col-lg-7 col-md-6">
+                   <div class="row">
+                       <img src="imgs/4ae9888a-8fab-4bc2-b4cb-116585afb579-chica.png" alt="">
+                    </div>
+                    <div class="row">
+                       <p class="d-flex justify-content-center" style="white-space:pre-wrap;">{{intro1}}</p>
+                    </div>
                 </div>
+
                 <div class="caja-der col-12 col-lg-5 col-md-6">
-                  <h2 class="titulo-seccion mb-2">Servizi</h2>
-                   <p class=" d-flex justify-content-center" style="white-space:pre-wrap;">{{intro}}</p>
+                    <div class="row">
+                      <p class="d-flex justify-content-center" style="white-space:pre-wrap;">{{intro2}}</p>
+                    </div>
+                    <div class="row">
+                        <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-chica.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +62,8 @@ Vue.component('servizi', {
     data() {
         return {
             leerMas: false,
-            intro: 'Lo studio offre un servizio qualificato di psicodiagnosi, sostegno e psicoterapia, dedicato a famiglie, genitori, adolescenti, bambini e adulti, in un contesto protetto, inclusivo ed accogliente.\n\nL’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.',
+            intro1: 'Lo studio offre un servizio qualificato di psicodiagnosi, sostegno e psicoterapia, dedicato a famiglie, genitori, adolescenti, bambini e adulti, in un contesto protetto, inclusivo ed accogliente.',
+            intro2:'L’équipe, che si avvale di collaborazioni multidisciplinari, valuta e progetta interventi di cura specifici e pensati per ciascun paziente.',
 
             items: [
                 { 

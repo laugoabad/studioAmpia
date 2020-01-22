@@ -7,7 +7,9 @@ Vue.component('eventi', {
             
                 <div class="row d-flex justify-content-center mx-5">
                     <article v-for="(item, index) of items" class="card col-10 col-md-5 col-xl-3">
-                        <img v-bind:src="item.imagen" class="card-img-top mx-auto" alt="">
+                        <div class="card-img-top">
+                            <img v-bind:src="item.imagen" class=" mx-auto" alt="">
+                        </div>    
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title text-center mb-1">
                                 {{item.titulo}}
@@ -37,12 +39,12 @@ Vue.component('eventi', {
                 },
                 {
                     titulo: 'DSA - Il Punto di Vista del Bambino',
-                    imagen: 'imgs/eventi4.jpg',
+                    imagen: 'imgs/eventi3.jpg',
                     texto: 'Un incontro formativo e informativo per fare chiarezza sui Disturbi Specifici dell’Apprendimento(DSA). Ripercorrendo ciascuna delle fasi dal percorso diagnostico, sino alla formulazione di strategie di compensazione, ci si soffermerà in special modo sui vissuti dei bambini e dei ragazzi.'
                 },
                 {
                     titulo: 'I Famigerati Terribili Due',
-                    imagen: 'imgs/eventi3.jpg',
+                    imagen: 'imgs/eventi4.jpg',
                     texto: 'I due anni, terribili e deliziosi, sono il territorio di confine in cui massimamente si incontrano l’imitazione e la limitazione. I tentativi costanti del piccolo di svalicare i limiti e le negoziazioni continue sembrano non trovare soluzione.\n\Improvvisamente anche il bambino dal temperamento più mite affina l’arte delle urla, dei pianti inconsolabili e delle reazioni inaspettate. L’autonomia che sboccia, la personalità che brilla, sono aspetti straordinari da osservare, ma spesso si è stanchi per prestare l’attenzione che si vorrebbe e che il bambino si aspetta.\n\nRivolgiamo lo sguardo al loro atteggiamento oppositivo come tentativo iniziale, talora maldestro, senz’altro confuso, di comprendere e sperimentare la propria posizione nel mondo.\n\nConsideriamo gli aspetti fondamentali della genitorialità, in un’epoca della crescita in cui il paradigma - benché declinato nella maniera più varia e molteplice - è l stesso per tutti: il compito dell’adulto è di porre limiti, il compito del piccolo è di oltrepassarli …un No contro No, che fa scintille!'
                 },
                

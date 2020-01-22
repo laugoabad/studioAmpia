@@ -8,7 +8,6 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
-
 }
 
 body {
@@ -144,13 +143,13 @@ li {
 }
 
 .container-servizi, .container-aree {
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .caja-izq {
-    background-image: url("../imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.jpg");
+    background-image: url("../imgs/4ae9888a-8fab-4bc2-b4cb-116585afb579-chica.png");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,13 +161,12 @@ li {
 }
 
 .caja-der p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 #servizi .card {
     font-size: 1.3rem;
-    font-weight: 600;
     margin: 2rem;
     padding: 2rem 0.5rem;
     background-color: #b8b0b0;
@@ -206,10 +204,11 @@ li {
     margin: 2rem;
 }
 
-#eventi img.card-img-top {
-    width: 10rem;
-    height: 10rem;
-    margin: 2rem;
+#eventi .card-img-top {
+    max-width: 100%;
+    max-height: 15rem;
+    margin: 2rem auto;
+    width: auto
 }
 
 #eventi .card-body {
@@ -293,6 +292,7 @@ li {
     text-decoration: none;
 }
 
+
 /* --------------------------------------------------------------------------------- */
 
 @media (min-width:768px) {
@@ -336,98 +336,89 @@ li {
         padding: 2rem;
     }
 }
-   
-
-/* ---------------------------------------------------------------------------------------------- */
-
-@media (min-width:1024px) {
-    section {
-        margin-top: 9rem;
+    /* ---------------------------------------------------------------------------------------------- */
+    @media (min-width:1024px) {
+        section {
+            margin-top: 9rem;
+        }
+        .titulo-seccion {
+            font-size: 4rem;
+        }
+        .titulo-principal {
+            font-size: 4.5rem;
+        }
+        .titulo-secundario {
+            font-size: 1.7rem;
+        }
+        .texto-normal {
+            font-size: 1.7rem;
+        }
+        .texto-chico {
+            font-size: 1.4rem;
+        }
+        #intro {
+            margin-top: 14rem;
+        }
+        #chi-siamo, #aree {
+            margin-top: 10rem;
+            width: 80%;
+        }
+        #intro p {
+            font-size: 1.6rem;
+        }
+        #servizi .card {
+            font-size: 1.6rem;
+            margin: 2rem;
+            padding: 3rem 2rem;
+        }
+        #servizi .card-title {
+            font-size: 1.8rem;
+        }
+        .servizi-esteso {
+            padding: 6rem;
+        }
+        .servizi-esteso .card-title {
+            font-size: 2.4rem;
+        }
+        #eventi .card-body {
+            font-size: 1.3rem;
+        }
+        #eventi .card-title {
+            font-size: 1.8rem;
+        }
+        .info {
+            font-size: 1.6rem;
+        }
+        .caja-der p {
+            padding: 3rem;
+            font-size: 1.8rem;
+        }
+        .container-servizi, .container-aree {
+            width: 80%;
+        }
+        .boton {
+            padding: 1rem 2rem;
+            margin: 3rem;
+            font-size: 1.6rem;
+        }
+        .titulo-seccion {
+            padding: 0 3rem;
+        }
     }
-    .titulo-seccion {
-        font-size: 4rem;
+    /* ---------------------------------------------------------------------- */
+    @media (min-width:1440px) {
+        #servizi .card {
+            margin: 4rem;
+        }
+        #servizi .card-title {
+            font-size: 2rem;
+        }
+        .caja-der p {
+            font-size: 2rem;
+        }
+        .tarjeta {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
-    .titulo-principal {
-        font-size: 4.5rem;
-    }
-    .titulo-secundario {
-        font-size: 1.7rem;
-    }
-    .texto-normal {
-        font-size: 1.7rem;
-    }
-    .texto-chico {
-        font-size: 1.4rem;
-    }
-    #intro {
-        margin-top: 14rem;
-    }
-    #chi-siamo, #aree {
-        margin-top: 15rem;
-        width: 80%;
-    }
-    #intro p {
-        font-size: 1.6rem;
-    }
-    #servizi .card {
-        font-size: 1.6rem;
-        margin: 2rem;
-        padding: 3rem 2rem;
-    }
-    #servizi .card-title {
-        font-size: 1.8rem;
-    }
-    .servizi-esteso {
-        padding: 6rem;
-    }
-    .servizi-esteso .card-title {
-        font-size: 2.4rem;
-    }
-    #eventi img.card-img-top {
-        width: 15rem;
-        height: 15rem;
-    }
-    #eventi .card-body {
-        font-size: 1.3rem;
-    }
-    #eventi .card-title {
-        font-size: 1.8rem;
-    }
-    .info {
-        font-size: 1.6rem;
-    }
-    .caja-der p {
-        padding: 3rem;
-        font-size: 1.8rem;
-    }
-    .container-servizi, .container-aree {
-        width: 80%;
-    }
-    .boton {
-        padding: 1rem 2rem;
-        margin: 3rem;
-        font-size: 1.6rem;
-    }
-    .titulo-seccion {
-        padding: 0 3rem;
-    }
-}
-
-/* ---------------------------------------------------------------------- */
-
-@media (min-width:1440px) {
-    #servizi .card {
-        margin: 4rem;
-    }
-    #servizi .card-title {
-        font-size: 2rem;
-    }
-    .caja-der p {
-        font-size: 2rem;
-    }
-    .tarjeta {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
