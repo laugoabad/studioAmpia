@@ -27,8 +27,23 @@ Vue.component('navegacion', {
                             <a class="nav-link" href="#eventi">Eventi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#foot">Contatto</a>
+                            <div class="nav-link accordion">Contatto</div>
                         </li>
+                       <div class="collapse" id="cont">
+                            <div class="card card-body">
+                               <address class="texto-chico"> 
+                            <div >
+                                C.so Francia 131 - 1.138, Torino
+                            </div>    
+                            <div >    
+                               370 37 08 297
+                            </div>
+                            <div >
+                                <a href="mailto:ampia.torino@gmail.com">ampia.torino@gmail.com</a>
+                             </div>    
+                        </address>
+  </div>
+</div>
                     </ul> 
                 </div>
             </nav> 
