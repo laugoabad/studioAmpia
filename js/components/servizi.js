@@ -6,21 +6,12 @@ Vue.component('servizi', {
            <h2 class="titulo-seccion text-center mb-5">Servizi</h2>
            <div class="row">
                 <div class="col-12 col-lg-7 col-md-6">
-                   <div class="row">
-                       <img src="imgs/4ae9888a-8fab-4bc2-b4cb-116585afb579-chica.png" alt="">
-                    </div>
-                    <div class="row">
-                       <p class="d-flex justify-content-center" style="white-space:pre-wrap;">{{intro1}}</p>
-                    </div>
+                    <img src="imgs/4ae9888a-8fab-4bc2-b4cb-116585afb579-chica.png" alt="">
+                     <p class="d-flex justify-content-center texto-grande font-weight-bold" style="white-space:pre-wrap;">{{intro1}}</p>
                 </div>
-
-                <div class="caja-der col-12 col-lg-5 col-md-6">
-                    <div class="row">
-                      <p class="d-flex justify-content-center" style="white-space:pre-wrap;">{{intro2}}</p>
-                    </div>
-                    <div class="row">
-                        <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-chica.png" alt="">
-                    </div>
+                <div class="col-12 col-lg-5 col-md-6">
+                    <p class="d-flex justify-content-center texto-grande font-weight-bold" style="white-space:pre-wrap;">{{intro2}}</p>
+                    <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-chica.png" alt="">
                 </div>
             </div>
         </div>

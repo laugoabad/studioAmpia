@@ -112,8 +112,13 @@ header {
     font-weight: 600;
 }
 
+.texto-grande {
+  font-size: 1.8rem;
+  
+}
+
 .texto-normal {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -276,8 +281,6 @@ li {
 
 .footer {
     background-color: #7c7575;
-    /* position: fixed;
-    bottom: 0px; */
     width: 100%;
     padding: 0.5rem;
     color: white;
@@ -291,7 +294,7 @@ li {
     color: white;
     text-decoration: none;
 }
-
+}
 
 /* --------------------------------------------------------------------------------- */
 

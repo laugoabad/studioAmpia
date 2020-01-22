@@ -26,25 +26,17 @@ Vue.component('navegacion', {
                         <li class="nav-item">
                             <a class="nav-link" href="#eventi">Eventi</a>
                         </li>
-                        <li class="nav-item">
-                            <div class="nav-link accordion">Contatto</div>
-                        </li>
-                       <div class="collapse" id="cont">
-                            <div class="card card-body">
-                               <address class="texto-chico"> 
-                            <div >
-                                C.so Francia 131 - 1.138, Torino
-                            </div>    
-                            <div >    
-                               370 37 08 297
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" id="contatto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Contatto
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right texto-chico p-3" aria-labelledby="contatto">
+                                <a href="mailto:ampia.torino@gmail.com" class="dropdown-item text-center">ampia.torino@gmail.com</a>
+                                <div class="dropdown-item text-center" >+39 370 37 08 297</div>
+                                <div class="dropdown-item text-center" >C.so Francia 131 - 1.138, Torino</div>
                             </div>
-                            <div >
-                                <a href="mailto:ampia.torino@gmail.com">ampia.torino@gmail.com</a>
-                             </div>    
-                        </address>
-  </div>
-</div>
-                    </ul> 
+                        </li>
+                    </ul>
                 </div>
             </nav> 
       </div>
