@@ -35,7 +35,6 @@ header {
 }
 
 .navbar-brand {
-    font-family: 'Cinzel', serif;
     font-size: 1.4rem;
     font-weight: 600;
     color: whitesmoke;
@@ -50,7 +49,7 @@ header {
     margin-right: 3rem;
 }
 
-.navbar-light .navbar-nav .nav-link, .navbar-brand, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand, .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active {
     color: rgba(256, 256, 256, 0.8);
     font-weight: 800;
 }
@@ -114,7 +113,7 @@ header {
 
 .texto-grande {
   font-size: 1.8rem;
-  
+
 }
 
 .texto-normal {
@@ -294,7 +293,7 @@ li {
     color: white;
     text-decoration: none;
 }
-}
+
 
 /* --------------------------------------------------------------------------------- */
 
