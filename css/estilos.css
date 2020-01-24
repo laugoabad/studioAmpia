@@ -161,7 +161,7 @@ li {
 }
 
 #servizi .container-servizi img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -194,10 +194,6 @@ li {
     max-height: 15rem;
     margin: 2rem auto;
     width: auto;
-    /* width: 20%;
-    height: auto;
-    margin-bottom: 2rem;
-    background-color: white; */
 }
 
 #eventi article {
@@ -369,6 +365,10 @@ li {
     #intro p {
         font-size: 1.6rem;
     }
+    #servizi .container-servizi img {
+        width: 50%;
+        height: auto;
+    }
     #servizi .card {
         font-size: 1.6rem;
         margin: 2rem;
@@ -391,10 +391,6 @@ li {
     }
     .info {
         font-size: 1.6rem;
-    }
-    .caja-der p {
-        padding: 3rem;
-        font-size: 1.8rem;
     }
     .container-servizi, .container-aree {
         width: 80%;
