@@ -1,10 +1,9 @@
 Vue.component('eventi', {
     template: //html
         `<div>
-            
-           <h2 class="titulo-seccion text-center">Eventi
-            </h2>
-            
+            <div> 
+                <h2 class="titulo-seccion text-center">Eventi</h2>
+            </div>
                 <div class="row d-flex justify-content-center mx-3">
                     <article v-for="(item, index) of items" class="card col-10 col-md-5 col-xl-3">
                         <div class="card-img-top">

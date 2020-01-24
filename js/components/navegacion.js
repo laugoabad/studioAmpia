@@ -2,8 +2,8 @@ Vue.component('navegacion', {
     template: //html
         `<div>
 
-         <nav class="navbar navbar-expand-lg navbar-light fixed-top p-4">
-                <a class="navbar-brand" href="#"><img src="imgs/5.png" width="30" height="30" alt="favicon">&nbsp;&nbsp;
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4">
+                <a class="navbar-brand" href="#"><img src="imgs/logo.png" width="35" height="35" alt="favicon">&nbsp;&nbsp;
                     Studio Ampia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdownNav" 
                     aria-expanded="false" aria-label="Toggle navigation">
