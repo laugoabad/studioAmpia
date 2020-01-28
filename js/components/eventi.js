@@ -2,7 +2,7 @@ Vue.component('eventi', {
     template: //html
         `<div>
             <div> 
-                <h2 class="titulo-seccion text-center">Calendario di Eventi</h2>
+                <h2 class="titulo-seccion text-center">Eventi</h2>
             </div>
             <div class="row calendario mx-auto">
                 <article v-for="(fecha, index) of fechas" class="col-12 mx-auto">
