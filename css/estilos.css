@@ -218,10 +218,7 @@ li {
     border-top: 1px solid black;
     font-size: 1.2rem;
     padding: 3rem;
- 
 }
-
-
 
 #eventi .col-8 {
     padding: 0rem;
@@ -292,6 +289,23 @@ li {
     text-decoration: none;
 }
 
+.row-striped-grey {
+    background-color: #efefef;
+    border-left: 4px #000000 solid;
+    padding: 15px 0;
+}
+
+.row-striped-white {
+    background-color: #ffffff;
+    border-left: 4px #efefef solid;
+    padding: 15px 0;
+}
+
+.calendario {
+    margin-top: 3rem;
+}
+
+
 /* --------------------------------------------------------------------------------- */
 
 @media (min-width:768px) {
@@ -329,6 +343,9 @@ li {
     #intro p {
         font-size: 1.4rem;
         padding: 4rem 6rem;
+    }
+    .calendario {
+        width: 50%;
     }
 }
 
