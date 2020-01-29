@@ -2,7 +2,7 @@ Vue.component('navegacion', {
     template: //html
         `<div>
 
-         <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4">
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-5 py-3">
                 <a class="navbar-brand" href="#"><img src="imgs/logo.png" width="35" height="35" alt="favicon">&nbsp;&nbsp;
                     Studio Ampia</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarNavDropdownNav" 

@@ -250,6 +250,10 @@ li {
     cursor: pointer;
 }
 
+button:focus {
+    outline: none;
+}
+
 .btn-secondary {
     background-color: #b8b0b0;
 }
