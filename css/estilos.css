@@ -53,10 +53,12 @@ header {
     color: white;
 }
 
-.navbar-light .navbar-toggler-icon {
+.navbar-dark .navbar-toggler-icon {
     background-image: url("../imgs/icons8-menu-26.png");
 }
-
+.navbar-dark .navbar-toggler {
+    border: none;
+}
 #intro .card {
     margin-bottom: 0;
     margin-top: 3rem;
