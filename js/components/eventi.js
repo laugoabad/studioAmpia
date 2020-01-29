@@ -4,6 +4,7 @@ Vue.component('eventi', {
             <div> 
                 <h2 class="titulo-seccion text-center">Eventi</h2>
             </div>
+            <h2 class="sub-titulo"> Calendario</h2>
             <div class="row calendario mx-auto">
                 <article v-for="(fecha, index) of fechas" class="col-12 mx-auto">
                     <div v-if="fecha.giorno!=='' ">
@@ -26,7 +27,7 @@ Vue.component('eventi', {
                 </article>
             </div>
          
-
+<h2 class="sub-titulo"> Tematiche</h2>
             <div v-if="!leerMas" class="mt-5">
                 <div class="row d-flex justify-content-center mx-3">
                     <article v-for="(item, index) of items" class="card col-10 col-md-5 col-xl-3" @click="checkLeerMas(index)">
@@ -42,10 +43,11 @@ Vue.component('eventi', {
                         <div class="info">
                             +info
                         </div>   
-                        
+
                     </article>
                 </div> 
             </div>
+
             <template v-else>
                 <article class="row d-flex justify-content-center m-5">
                     <div class="card servizi-esteso col-12">

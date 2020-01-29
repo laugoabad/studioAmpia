@@ -105,11 +105,19 @@ header {
 }
 
 .titulo-seccion {
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: #7c7575;
     font-weight: 600;
     margin-bottom: 2rem;
     border-bottom: 1px solid #7c7575;
+}
+
+.sub-titulo {
+    font-size: 2rem;
+    color: #1d4d4f;
+    font-family: 'Cinzel', serif;
+    margin: 6rem 0rem 0rem 0;
+    font-weight: 700;
 }
 
 .texto-grande {
@@ -302,7 +310,7 @@ li {
 }
 
 .calendario {
-    margin-top: 3rem;
+    margin: 3rem 0rem 8rem 0rem;
 }
 
 /* --------------------------------------------------------------------------------- */
@@ -320,8 +328,11 @@ li {
         letter-spacing: 0.3rem;
     }
     .titulo-seccion {
-        font-size: 3rem;
+        font-size: 3.5rem;
         padding: 0 2rem;
+    }
+    .sub-titulo {
+        font-size: 2.3rem;
     }
     .texto-normal {
         font-size: 1.5rem;
@@ -344,7 +355,7 @@ li {
         padding: 4rem 6rem;
     }
     .calendario {
-        width: 50%;
+        width: 80%;
     }
 }
 
@@ -365,6 +376,10 @@ li {
     }
     .titulo-secundario {
         font-size: 1.7rem;
+    }
+    .sub-titulo {
+        font-size: 2.8rem;
+        margin: 2rem 0rem 0rem 0;
     }
     .texto-normal {
         font-size: 1.7rem;
