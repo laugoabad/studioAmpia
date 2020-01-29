@@ -9,11 +9,11 @@ Vue.component('eventi', {
                     <div v-if="fecha.giorno!=='' ">
                     <div :class="{'row-striped-grey': index % 2 === 0, 'row-striped-white': index % 2 !== 0}">
                         <div class="row">
-                            <div class="col-2 text-right">
+                            <div class="col-3 text-center">
                                 <h2 class="display-4"><span class="badge badge-secondary">{{fecha.giorno}}</span></h2>
-                                <h3>{{fecha.mese}}</h3>
+                                <h3><strong>{{fecha.mese}}</strong></h3>
                             </div>
-                            <div class="col-10">
+                            <div class="col-9">
                                 <h4 class="text-uppercase"><strong>{{fecha.titulo}}</strong></h4>
                                 
                                 <div class="fecha texto-chico" ><img src="imgs/iconmonstr-time-3-240.png" alt="" width="10" height="10"><strong> {{fecha.ora}}  </strong></div> 
@@ -98,25 +98,25 @@ Vue.component('eventi', {
             ],
             fechas: [
                 {
-                    titulo: 'L’Adolescente e la Paura del Mondo',
-                    giorno: '25',
-                    mese: 'MAR',
-                    ora: '17 ore',
-                    luogo: 'C.so Francia 131'
+                    titulo: 'Disordini del Sonno in Età Pediatrica',
+                    giorno: '18',
+                    mese: 'APR',
+                    ora: '10:30 - 12',
+                    luogo: 'Studio Pediatrico Parella - via Crevacuore 37, Torino'
                 },
                 {
                     titulo: 'I Famigerati Terribili Due',
-                    giorno: '5',
-                    mese: 'APR',
-                    ora: '19 ore',
-                    luogo: 'C.so Francia 131'
+                    giorno: '16',
+                    mese: 'MAG',
+                    ora: '10:30 - 12',
+                    luogo: ' Studio Pediatrico Parella - via Crevacuore 37, Torino'
                 },
                 {
-                    titulo:'',
-                    giorno: '',
-                    mese: '',
-                    ora: '',
-                    luogo: ''
+                    titulo:'DSA - Il Punto di Vista del Bambino',
+                    giorno: '6',
+                    mese: 'GIU',
+                    ora: '10:30 - 12',
+                    luogo: ' Studio Pediatrico Parella - via Crevacuore 37, Torino'
                 },
             ]
         }

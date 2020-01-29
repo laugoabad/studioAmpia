@@ -290,7 +290,7 @@ li {
 }
 
 .row-striped-grey {
-    background-color: #efefef;
+    background-color: #bfd9d9;
     border-left: 4px #000000 solid;
     padding: 15px 0;
 }
@@ -304,7 +304,6 @@ li {
 .calendario {
     margin-top: 3rem;
 }
-
 
 /* --------------------------------------------------------------------------------- */
 
