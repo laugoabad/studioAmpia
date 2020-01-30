@@ -15,7 +15,7 @@ Vue.component('eventi', {
                                 <h3><strong>{{fecha.mese}}</strong></h3>
                             </div>
                             <div class="col-9">
-                                <h4 class="text-uppercase"><strong>{{fecha.titulo}}</strong></h4>
+                                <h4 class="text-uppercase texto-normal"><strong>{{fecha.titulo}}</strong></h4>
                                 
                                 <div class="fecha texto-chico" ><img src="imgs/iconmonstr-time-3-240.png" alt="" width="10" height="10"><strong> {{fecha.ora}}  </strong></div> 
                               
