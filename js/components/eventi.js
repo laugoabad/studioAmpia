@@ -27,7 +27,7 @@ Vue.component('eventi', {
                 </article>
             </div>
          
-<h2 class="sub-titulo"> Tematiche</h2>
+<h2 class="sub-titulo">Argomenti</h2>
             <div v-if="!leerMas" class="mt-5">
                 <div class="row d-flex justify-content-center mx-3">
                     <article v-for="(item, index) of items" class="card col-10 col-md-5 col-xl-3" @click="checkLeerMas(index)">
