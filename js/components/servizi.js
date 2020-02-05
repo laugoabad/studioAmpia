@@ -5,7 +5,7 @@ Vue.component('servizi', {
         <div class= "container-servizi">
            <h2 class="titulo-seccion text-center">Servizi</h2>
            <div class="row">
-                <div class="col-12 col-lg-7  d-flex justify-content-center">
+                <div class="col-12 col-lg-7 d-flex justify-content-center">
                     <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.jpg" alt="">
                 </div>    
                
