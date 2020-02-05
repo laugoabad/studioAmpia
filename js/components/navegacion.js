@@ -30,7 +30,7 @@ Vue.component('navegacion', {
                            <a class="nav-link dropdown-toggle" href="#" id="contatto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Contatto
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right texto-chico p-3" aria-labelledby="contatto">
+                            <div class="dropdown-menu dropdown-menu-right texto-chico p-5" aria-labelledby="contatto">
                                 <a href="mailto:ampia.torino@gmail.com" class="dropdown-item text-center">ampia.torino@gmail.com</a>
                                 <div class="dropdown-item text-center" >+39 370 37 08 297</div>
                                 <div class="dropdown-item text-center" >C.so Francia 131 - 1.138, Torino</div>

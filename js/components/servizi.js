@@ -5,11 +5,11 @@ Vue.component('servizi', {
         <div class= "container-servizi">
            <h2 class="titulo-seccion text-center">Servizi</h2>
            <div class="row">
-                <div class="col-12 col-lg-7 col-md-6 d-flex justify-content-center">
-                    <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-chica.png" alt="">
+                <div class="col-12 col-lg-7  d-flex justify-content-center">
+                    <img src="imgs/97cfd816-9b0e-4c61-ac4b-206075bb7a81-r.jpg" alt="">
                 </div>    
                
-                <div class="col-12 col-lg-5 col-md-6 mt-5">
+                <div class="col-12 col-lg-5 mt-5">
                     <p class="d-flex justify-content-center texto-grande font-weight-bold" style="white-space:pre-wrap;">{{intro1}}</p>
                     <p class="d-flex justify-content-center texto-grande font-weight-bold" style="white-space:pre-wrap;">{{intro2}}</p>
                 </div>

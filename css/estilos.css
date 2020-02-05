@@ -8,6 +8,7 @@ html {
     font-size: 10px;
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     color: black;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #f3f2f2;
 }
 
 section {
@@ -41,7 +42,7 @@ header {
 }
 
 .navbar {
-    background-color: #7c7575;
+    background-color: #a8a3a3;
 }
 
 .nav-item {
@@ -56,9 +57,11 @@ header {
 .navbar-dark .navbar-toggler-icon {
     background-image: url("../imgs/icons8-menu-26.png");
 }
+
 .navbar-dark .navbar-toggler {
     border: none;
 }
+
 #intro .card {
     margin-bottom: 0;
     margin-top: 3rem;
@@ -212,18 +215,18 @@ li {
 
 #eventi .card {
     margin: 2rem;
-    padding: 2rem 0rem;
+    padding-bottom: 2rem;
 }
 
 #eventi .card-img-top {
     max-width: 100%;
-    max-height: 15rem;
+    max-height: 14rem;
     margin: 2rem auto;
     width: auto
 }
 
 #eventi .card-body {
-    background-color: #bfd9d9;
+    background-color: #dfecec;
     border-top: 1px solid black;
     font-size: 1.2rem;
     padding: 3rem;
@@ -287,7 +290,7 @@ button:focus {
 }
 
 .footer {
-    background-color: #7c7575;
+    background-color: #a8a3a3;
     width: 100%;
     padding: 0.5rem;
     color: white;
@@ -303,7 +306,7 @@ button:focus {
 }
 
 .row-striped-grey {
-    background-color: #bfd9d9;
+    background-color: #dfecec;
     border-left: 4px #000000 solid;
     padding: 15px 0;
 }
@@ -402,10 +405,7 @@ button:focus {
     #intro p {
         font-size: 1.6rem;
     }
-    #servizi .container-servizi img {
-        width: 50%;
-        height: auto;
-    }
+    
     #servizi .card {
         font-size: 1.6rem;
         margin: 2rem;
@@ -431,6 +431,7 @@ button:focus {
     }
     .container-servizi, .container-aree {
         width: 80%;
+        margin-bottom: 7rem;
     }
     .boton {
         padding: 1rem 2rem;
@@ -442,9 +443,7 @@ button:focus {
 /* ---------------------------------------------------------------------- */
 
 @media (min-width:1440px) {
-    #servizi .card {
-        margin: 4rem;
-    }
+   
     #servizi .card-title {
         font-size: 2rem;
     }
