@@ -213,6 +213,16 @@ li {
     padding-right: 0;
 }
 
+#eventi .sospensione {
+    background-color: #80b3b3;
+    border-radius: 0.5rem;
+    border-color: black;
+    margin: 4rem;
+    padding: 3rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
 #eventi .card {
     margin: 2rem;
     padding-bottom: 2rem;
@@ -405,7 +415,6 @@ button:focus {
     #intro p {
         font-size: 1.6rem;
     }
-    
     #servizi .card {
         font-size: 1.6rem;
         margin: 2rem;
@@ -443,7 +452,6 @@ button:focus {
 /* ---------------------------------------------------------------------- */
 
 @media (min-width:1440px) {
-   
     #servizi .card-title {
         font-size: 2rem;
     }

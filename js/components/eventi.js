@@ -5,6 +5,7 @@ Vue.component('eventi', {
                 <h2 class="titulo-seccion text-center">Eventi</h2>
             </div>
             <h2 class="sub-titulo"> Calendario</h2>
+            <h3 class="sospensione text-center"> Per ragioni di pubblica conoscenza si sospendono tutti gli incontri</h3>
             <div class="row calendario mx-auto">
                 <article v-for="(fecha, index) of fechas" class="col-12 mx-auto">
                     <div v-if="fecha.giorno!=='' ">
