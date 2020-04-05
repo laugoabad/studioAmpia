@@ -126,7 +126,7 @@ header {
 }
 
 .texto-grande {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .texto-normal {
@@ -456,7 +456,7 @@ button:focus {
         font-size: 2rem;
     }
     .texto-grande {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .tarjeta {
         width: 80%;
