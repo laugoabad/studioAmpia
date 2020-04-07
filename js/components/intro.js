@@ -13,6 +13,10 @@ Vue.component('intro', {
                     <div class="d-flex justify-content-center">
                         <img src="imgs/logo.png" class="logo m-1" alt="logo">
                     </div>
+                    <h3 class="sospensione text-center"> I Professionisti dello Studio Ampia hanno aderito all'iniziativa #psicologionline promossa dall'Ordine degli Psicologi che prevede la possibilità di offrire prestazioni di ascolto e di supporto telefonico oppure on line. 
+In linea con la nostra politica, il primo colloquio di teleconsulto è gratuito, come gesto di solidarietà verso la popolazione, in questo momento così complicato e delicato per tutti.<br>
+
+Restano momentaneamente sospesi tutti gli incontri programmati fino ad ora.</h3>
                 </div>
                 <div class="tarjeta">
                     <div class="card">
