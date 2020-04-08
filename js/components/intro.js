@@ -10,11 +10,11 @@ Vue.component('intro', {
                           Medici &nbsp;|&nbsp; Psicologi &nbsp; | &nbsp; Psicoterapeuti<br>
                          Specializzati in Infanzia ed Adolescienza
                     </h5>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mb-5 ">
                         <img src="imgs/logo.png" class="logo m-1" alt="logo">
                     </div>
-                    <h3 class="sospensione text-center"> I Professionisti dello Studio Ampia hanno aderito all'iniziativa #psicologionline promossa dall'Ordine degli Psicologi che prevede la possibilità di offrire prestazioni di ascolto e di supporto telefonico oppure on line. 
-In linea con la nostra politica, il primo colloquio di teleconsulto è gratuito, come gesto di solidarietà verso la popolazione, in questo momento così complicato e delicato per tutti.<br>
+                    <h3 class="sospensione text-center"> I Professionisti dello Studio Ampia hanno aderito all'iniziativa #psicologionline promossa dall'Ordine degli Psicologi che prevede la possibilità di offrire prestazioni di ascolto e di supporto telefonico oppure on line. <br>
+In linea con la nostra politica, il primo colloquio di teleconsulto è gratuito, come gesto di solidarietà, in questo momento così complicato e delicato per tutti.<br>
 
 Restano momentaneamente sospesi tutti gli incontri programmati fino ad ora.</h3>
                 </div>
