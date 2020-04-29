@@ -13,11 +13,12 @@ Vue.component('chisiamo', {
             </h3>
             
            <p class="texto-chico p1">
-            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+           <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
+            
                &nbsp;&nbsp;{{chiSiamo[0].tel}}
             </p>
             <p class="texto-chico p1">
-                <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
+             <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>   
                &nbsp;{{chiSiamo[0].mail}}
             </p>
             <p style="white-space:pre-line;" class="texto-normal ">
@@ -36,11 +37,12 @@ Vue.component('chisiamo', {
                 {{chiSiamo[1].titulo}}
             </h3>
             <p class="texto-chico p1">
-            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+            <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
                &nbsp;&nbsp;{{chiSiamo[1].tel}}
             </p>
             <p class="texto-chico p1">
-                <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
+            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+                
                &nbsp;{{chiSiamo[1].mail}}
             </p>
              
@@ -60,11 +62,12 @@ Vue.component('chisiamo', {
                 {{chiSiamo[2].titulo}}
             </h3>
              <p class="texto-chico p1">
-            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+           <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
                &nbsp;&nbsp;{{chiSiamo[2].tel}}
             </p>
             <p class="texto-chico p1">
-                <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
+             <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+                
                &nbsp;{{chiSiamo[2].mail}}
             </p>
 
@@ -84,11 +87,12 @@ Vue.component('chisiamo', {
                 {{chiSiamo[3].titulo}}
             </h3>
            <p class="texto-chico p1">
-            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+            <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
                &nbsp;&nbsp;{{chiSiamo[3].tel}}
             </p>
             <p class="texto-chico p1">
-                <span><img src="./imgs/iconmonstr-phone-1-240.png"></span>
+            <span><img src="./imgs/iconmonstr-mail-thin-240.png"></span>
+                
                &nbsp;{{chiSiamo[3].mail}}
             </p>
             <p style="white-space:pre-line;" class="texto-normal mt-n3">

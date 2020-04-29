@@ -18,7 +18,7 @@ body {
     color: black;
     margin-left: auto;
     margin-right: auto;
-    background-color: #f3f2f2;
+    background-color: #eae7d9;
 }
 
 section {
@@ -96,6 +96,7 @@ header {
 #chi-siamo img {
     width: 1.5rem;
 }
+
 #chi-siamo span img {
     width: 1.8rem;
 }
